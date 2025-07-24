@@ -1,12 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Commingsoon from './Pages/Commingsoon';
+import ComingSoon from './Pages/ComingSoon/ComingSoon';
 
 function App() {
   return (
     <div className="App">
-      <Commingsoon />
+      <ComingSoon />
+
     </div>
   );
 }

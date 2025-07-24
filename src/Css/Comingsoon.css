@@ -55,3 +55,14 @@
   color: #ccc;
   margin-bottom: 30px;
 }
+
+.coming-soon-wrapper {
+  background-color: #0d3b66; /* Change to your preferred background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+}
