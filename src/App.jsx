@@ -1,13 +1,32 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import ComingSoon from './Pages/ComingSoon/ComingSoon';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+// import ComingSoon from './Pages/ComingSoon/ComingSoon';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './Pages/Header/Header';
+import Home from './Pages/Home/Home';
+import Footer from './Pages/Footer/Footer';
+import About from './Pages/About/About';
+import Contact from './Pages/Contact/Contact';
+import Certificates from './Pages/Certificates/Certificates';
 
 function App() {
   return (
     <div className="App">
-      <ComingSoon />
-
+      {/* <ComingSoon /> */}
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/certificates' element={<Certificates />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
