@@ -42,13 +42,6 @@ function Footer() {
                             <p><a href="/certificates" className="text-white text-decoration-none">Certificates</a></p>
                             <p><a href="/contact" className="text-white text-decoration-none">Contact</a></p>
                         </div>
-                        <div className="col-md-3 col-lg-2 col-xl-2 mb-4">
-                            <h6 className="text-uppercase fw-bold mb-4">Quick Links</h6>
-                            <p><a href="/" className="text-white text-decoration-none">Home</a></p>
-                            <p><a href="/about" className="text-white text-decoration-none">About</a></p>
-                            <p><a href="/certificates" className="text-white text-decoration-none">Certificates</a></p>
-                            <p><a href="/contact" className="text-white text-decoration-none">Contact</a></p>
-                        </div>
 
                         <div className="col-md-3 col-lg-2 col-xl-2 mb-4">
                             <h6 className="text-uppercase fw-bold mb-4">Products</h6>
