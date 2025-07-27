@@ -3,7 +3,7 @@ import Logo from '../../images/logo-1.png';
 
 function Footer() {
     return (
-        <footer className="text-white" style={{ backgroundColor: '#1c1c1c' }}>
+        <footer className="text-white" style={{ backgroundColor: '#f7e0a1ff' }}>
             <section className="d-flex justify-content-between align-items-center p-4 border-bottom border-secondary">
                 <div className="me-5 d-none d-lg-block">
                     <span>Connect with us on social networks:</span>
