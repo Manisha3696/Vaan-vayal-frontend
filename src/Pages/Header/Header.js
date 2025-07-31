@@ -27,9 +27,20 @@ function Header() {
                                 Products
                             </Link>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to="/product1">Product1</Link></li>
-                                <li><Link className="dropdown-item" to="/product2">Product2</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Product3</Link></li>
+                                <li><Link className="dropdown-item" to="/product1">Spices</Link></li>
+                                <li><Link className="dropdown-item" to="/product2">Rice</Link></li>
+                                <li><Link className="dropdown-item" to="/product3">Flours</Link></li>
+                                <li><Link className="dropdown-item" to="/product3">Appalam</Link></li>
+                                <li><Link className="dropdown-item" to="/product3">Masala Powder</Link></li>
+                                <li><Link className="dropdown-item" to="/product3">Oil</Link></li>
+                                <li><Link className="dropdown-item" to="/product3">Jaggery</Link></li>
+                                <li><Link className="dropdown-item" to="/product3">Aval & Pori</Link></li>
+                                <li><Link className="dropdown-item" to="/product3">Salt</Link></li>
+                                <li><Link className="dropdown-item" to="/product3">Pickel</Link></li>
+                                <li><Link className="dropdown-item" to="/product3">Rice Paste</Link></li>
+                                <li><Link className="dropdown-item" to="/product3">Rava $ Soya Chunks</Link></li>
+                                <li><Link className="dropdown-item" to="/product3">Snacks</Link></li>
+                                <li><Link className="dropdown-item" to="/product3">Flower</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item">
