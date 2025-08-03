@@ -11,9 +11,7 @@ import soya1 from '../../images/categary/soya.jpg';
 import salt1 from '../../images/categary/salt.jpg';
 import appalam1 from '../../images/categary/appalam.jpg';
 import jaggery1 from '../../images/categary/jaggery.jpg';
-import flight from '../../images/spices/flight.jpg'
 import { useEffect } from "react";
-import { Container, Row, Col } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandshake, faUserShield, faBoxesPacking, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import iconlogo from '../../images/logo-1.png'

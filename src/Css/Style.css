@@ -1,6 +1,188 @@
-body {
-  font-family: Arial, sans-serif;
+html {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    height: 100%;
 }
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+    line-height: 1.8;
+    color: #051922;
+    overflow-x: hidden;
+}
+
+body img {
+    max-width: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin: 0 0 1.25rem 0;
+    color: #051922;
+}
+
+.mt-75 {
+    margin-top: 75px;
+}
+
+.mb-75 {
+    margin-bottom: 75px;
+}
+
+h1:last-child,
+.h1:last-child,
+h2:last-child,
+.h2:last-child,
+h3:last-child,
+.h3:last-child,
+h4:last-child,
+.h4:last-child,
+h5:last-child,
+.h5:last-child,
+h6:last-child,
+.h6:last-child {
+    margin: 0;
+}
+
+h1,
+.h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+@media only screen and (max-width: 767.96px) {
+
+    h1,
+    .h1 {
+        font-size: 3rem;
+        line-height: 3.25rem;
+    }
+}
+
+@media only screen and (max-width: 575.96px) {
+
+    h1,
+    .h1 {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+}
+
+@media only screen and (max-width: 767.96px) {
+
+    h2,
+    .h2 {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+}
+
+@media only screen and (max-width: 575.96px) {
+
+    h2,
+    .h2 {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+}
+
+@media only screen and (max-width: 575.96px) {
+
+    h3,
+    .h3 {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+}
+
+@media only screen and (max-width: 575.96px) {
+
+    h4,
+    .h4 {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+h6,
+.h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+    line-height: 1.8;
+    color: #051922;
+    margin: 0 0 1.25rem 0;
+}
+
+p:last-child {
+    margin: 0;
+}
+
 .navbar-nav .nav-link {
     font-weight: 500;
     color: #333;
@@ -18,10 +200,12 @@ body {
 .dropdown-menu {
     min-width: 10rem;
 }
+
 .text-white {
     --bs-text-opacity: 1;
     color: #0b5c0d !important;
 }
+
 .featurs .featurs-item .featurs-icon {
     position: relative;
     width: 120px;
@@ -39,4 +223,395 @@ body {
     transform: rotate(45deg);
     background: var(--bs-secondary);
 
+}
+
+a.video-play-btn {
+    position: absolute;
+    background-color: #2e7d32;
+    color: #051922;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 92px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding-left: 5px;
+    display: block;
+    z-index: 2;
+    top: 50%;
+    margin-top: -45px;
+    -webkit-box-shadow: 0 0 20px #adadad;
+    box-shadow: 0 0 20px #adadad;
+    left: 50%;
+    margin-left: -45px;
+}
+
+.abt-bg {
+    background-image: url(../images/About/abt.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.abt-bg:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #051922;
+    opacity: 0.3;
+}
+
+.abt-section .abt-text {
+    padding: 50px;
+    padding-left: 30px;
+}
+
+.abt-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px !important;
+    text-align: start !important;
+}
+
+.abt-text p.top-sub {
+    opacity: 0.8;
+    margin-bottom: 10px !important;
+    text-align: start !important;
+}
+
+.abt-text p:last-child {
+    margin-bottom: 0;
+}
+
+.breadcrumb-bg {
+    background-image: url(../images/Contact/breadcrumb-bg.jpg);
+}
+
+.breadcrumb-text p {
+    color: #2e7d32;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.breadcrumb-text h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.breadcrumb-section {
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+
+.breadcrumb-section:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #07212e;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.text-custom {
+    color: #2e7d32;
+}
+
+.feature-bg {
+    position: relative;
+    margin: 50px 0;
+}
+
+.feature-bg:after {
+    background-image: url(../images/About/Why-vaan-vayal.jpg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    content: "";
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    -webkit-box-shadow: 0 0 20px #cacaca;
+    box-shadow: 0 0 20px #cacaca;
+    border-bottom-left-radius: 5px;
+}
+
+.list-section {
+    background-color: #f5f5f5;
+}
+
+.list-box {
+    overflow: hidden;
+    letter-spacing: 0.5px;
+}
+
+.list-box .content h3 {
+    display: block;
+    line-height: 22px;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.list-box .content p {
+    margin-bottom: 0px;
+    opacity: 0.75;
+}
+
+.list-box .list-icon i {
+    display: block;
+    font-size: 24px;
+    margin-right: 15px;
+    color: #2e7d32;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 60px;
+    border: 2px #2e7d32 dotted;
+    border-radius: 999px;
+}
+
+.green-text {
+    color: #2e7d32;
+}
+
+.heading-section .subheading {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    color: #2e7d32;
+}
+
+.heading-section h2 {
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.ftco-section {
+    padding: 2rem 0;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.testimony-section {
+    position: relative;
+}
+
+.testimony-section .owl-carousel {
+    margin: 0;
+}
+
+.testimony-section .owl-carousel .owl-stage-outer {
+    padding-bottom: 2em;
+    position: relative;
+}
+
+.testimony-section .owl-nav {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+.testimony-section .owl-nav .owl-prev {
+    left: 50%;
+    margin-left: -80px;
+}
+
+.testimony-section .owl-nav .owl-next {
+    right: 50%;
+    margin-right: -80px;
+}
+
+.testimony-section:hover .owl-nav .owl-prev,
+.testimony-section:hover .owl-nav .owl-next {
+    opacity: 1;
+}
+
+.testimony-section:hover .owl-nav .owl-prev {
+    left: 50%;
+    margin-left: -80px;
+}
+
+.testimony-section:hover .owl-nav .owl-next {
+    right: 50%;
+    margin-right: -80px;
+}
+
+.testimony-section .owl-dots {
+    text-align: center;
+}
+
+.testimony-section .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.testimony-section .owl-dots .owl-dot.active {
+    background: #82ae46;
+}
+
+.testimony-wrap {
+    display: block;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.testimony-wrap .user-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -75px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.testimony-wrap .user-img .quote {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.testimony-wrap .user-img .quote i {
+    color: #82ae46;
+}
+
+.testimony-wrap .name {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.testimony-wrap .position {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.ftco-services .services {
+    display: block;
+    width: 100%;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.ftco-services .services .icon {
+    line-height: 1.3;
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.ftco-services .services .icon:after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.19);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.ftco-services .services .icon span {
+    font-size: 50px;
+    color: #fff;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.ftco-services .services .media-body {
+    width: 100%;
+}
+
+.ftco-services .services .media-body h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #000000;
+}
+
+.ftco-services .services .media-body span {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ftco-services .services:hover .icon,
+.ftco-services .services:focus .icon {
+    background: #2e7d32;
+}
+
+.ftco-services .services:hover .icon span,
+.ftco-services .services:focus .icon span {
+    color: #fff;
+}
+
+.bg-color-1 {
+    background: #82ae46;
+}
+
+.img-fluid1 {
+    max-width: 300px !important;
+    height: 300px !important;
+    object-fit: cover;
 }
