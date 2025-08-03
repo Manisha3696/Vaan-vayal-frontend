@@ -212,17 +212,107 @@ p:last-child {
     height: 120px;
 }
 
-.featurs .featurs-item .featurs-icon::after {
-    content: "";
-    width: 35px;
-    height: 35px;
-    background: var(--bs-secondary);
-    position: absolute;
-    bottom: -10px;
-    transform: translate(-50%);
-    transform: rotate(45deg);
-    background: var(--bs-secondary);
+.spices-banner {
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
 
+.text-section {
+    max-width: 600px;
+}
+
+.main-heading {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #1c1c1c;
+    line-height: 1.3;
+}
+
+.highlight {
+    color: #b3a400;
+}
+
+.description {
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.yellow-button {
+    background-color: #b3a400;
+    border: none;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.image-section {
+    position: relative;
+    padding: 0;
+}
+
+.curved-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    clip-path: ellipse(100% 100% at 100% 50%);
+    background-color: #b3a400;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.curved-image {
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 991.98px) {
+    .text-section {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .main-heading {
+        font-size: 2.2rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+
+    .curved-image-wrapper {
+        clip-path: none;
+        background-color: transparent;
+        padding-right: 0;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .curved-image {
+        width: 70%;
+        height: 300px;
+        border-radius: 4%;
+        background-color: #b3a400;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main-heading {
+        font-size: 1.8rem;
+    }
+
+    .yellow-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
 }
 
 a.video-play-btn {
