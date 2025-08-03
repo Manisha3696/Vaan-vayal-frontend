@@ -44,7 +44,7 @@ function Header() {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/certificates">Global Buyers</Link>
+                            <Link className="nav-link" to="/Globalbuyers">Global Buyers</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/contact">Contact</Link>
