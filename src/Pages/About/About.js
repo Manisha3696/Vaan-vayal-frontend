@@ -1,13 +1,13 @@
 import React from 'react'
 import '../../Css/Style.css'
-import banner from '../../images/About/banner-2.png'
-import TestimonialCarousel from '../TestimonialCarousel'
+import banner from '../../images/Contact/breadcrumb-bg.jpg'
 import { Link } from 'react-router-dom'
 import Product1 from '../../images/About/flour.jpg'
 import Product2 from '../../images/About/oil.jpg'
 import Product3 from '../../images/About/rice.jpg'
 import Product4 from '../../images/About/jaggery.jpg'
 import Product5 from '../../images/About/spices.jpg'
+import abtBanner from '../../images/About/ingredient-bags-full-flour.jpg'
 
 function About() {
 
@@ -22,29 +22,32 @@ function About() {
       >
         <div className="container-lg">
           <div className="row">
-            <div className="col-lg-6 pt-5 mt-5" style={{ width: "50%" }}>
+            <div className="col-lg-6 pt-5 mt-5 responsive-abt-banner">
               <h2 className="display-1 ls-1"><span className="fw-bold text-custom">Organic</span> Products at your <span className="fw-bold">Doorsteps</span></h2>
               <p className="fs-4">Bringing nature's purity from farm to your home.</p>
               <div className="row my-5">
-                <div className="col">
+                <div className="col responsive-abt-col">
                   <div className="row text-dark">
                     <div className="col-auto"><p className="fs-1 fw-bold lh-sm mb-0">15+</p></div>
                     <div className="col"><p className="text-uppercase lh-sm mb-0">Handpicked Organic Products</p></div>
                   </div>
                 </div>
-                <div className="col">
+                <div className="col responsive-abt-col">
                   <div className="row text-dark">
                     <div className="col-auto"><p className="fs-1 fw-bold lh-sm mb-0">50+</p></div>
                     <div className="col"><p className="text-uppercase lh-sm mb-0">Happy Customers (and growing)</p></div>
                   </div>
                 </div>
-                <div className="col">
+                <div className="col responsive-abt-col">
                   <div className="row text-dark">
                     <div className="col-auto"><p className="fs-1 fw-bold lh-sm mb-0">10+</p></div>
                     <div className="col"><p className="text-uppercase lh-sm mb-0">Partnering Farmer Networkss</p></div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div className='col-lg-6 d-flex align-item-center p-5'>
+              <img src={abtBanner} alt='Abt-banner' className='about-img-style' />
             </div>
           </div>
         </div>
@@ -198,8 +201,7 @@ function About() {
                         <i className="fas fa-shipping-fast"></i>
                       </div>
                       <div className="content">
-                        <h3>Home Delivery</h3>
-                        <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+                        <p>At Vaan Vayal, we are committed to bringing you nature’s finest with authenticity and care.</p>
                       </div>
                     </div>
                   </div>
@@ -209,8 +211,7 @@ function About() {
                         <i className="fas fa-money-bill-alt"></i>
                       </div>
                       <div className="content">
-                        <h3>Best Price</h3>
-                        <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+                        <p>Our products are grown and sourced using sustainable and traditional methods that honor the earth.</p>
                       </div>
                     </div>
                   </div>
@@ -220,8 +221,7 @@ function About() {
                         <i class="fas fa-briefcase"></i>
                       </div>
                       <div class="content">
-                        <h3>Custom Box</h3>
-                        <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+                        <p>Every item reflects our dedication to purity, freshness, and trust.</p>
                       </div>
                     </div>
                   </div>
@@ -231,8 +231,7 @@ function About() {
                         <i class="fas fa-sync-alt"></i>
                       </div>
                       <div class="content">
-                        <h3>Quick Refund</h3>
-                        <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+                        <p>Choose Vaan Vayal for a wholesome experience rooted in quality and tradition.</p>
                       </div>
                     </div>
                   </div>
@@ -242,9 +241,6 @@ function About() {
           </div>
         </div>
       </div>
-      <section>
-        <TestimonialCarousel />
-      </section>
     </div >
   )
 }

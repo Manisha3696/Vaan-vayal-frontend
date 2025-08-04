@@ -339,6 +339,7 @@ a.video-play-btn {
 .abt-bg {
     background-image: url(../images/About/abt.jpg);
     height: 100%;
+    min-height: 300px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -348,6 +349,17 @@ a.video-play-btn {
     z-index: 1;
     overflow: hidden;
 }
+
+.about-img-style {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fef6d5;
+    display: block;
+    margin: 0 auto; /* Centers horizontally */
+}
+
 
 .abt-bg:after {
     position: absolute;
@@ -428,6 +440,8 @@ a.video-play-btn {
 
 .feature-bg {
     position: relative;
+    display: flex;
+    flex-direction: row;
     margin: 50px 0;
 }
 
@@ -445,6 +459,7 @@ a.video-play-btn {
     -webkit-box-shadow: 0 0 20px #cacaca;
     box-shadow: 0 0 20px #cacaca;
     border-bottom-left-radius: 5px;
+    z-index: 1;
 }
 
 .list-section {
@@ -704,4 +719,67 @@ a.video-play-btn {
     max-width: 300px !important;
     height: 300px !important;
     object-fit: cover;
+}
+
+.responsive-abt-banner {
+    width: 50% !important;
+}
+
+@media (max-width: 768px) {
+    .feature-bg {
+        flex-direction: column;
+    }
+
+    .feature-bg:after {
+        position: relative;
+        height: 300px;
+        border-radius: 0;
+        box-shadow: none;
+        order: -1;
+        margin: 0 auto;
+    }
+
+    .feature-bg>.container {
+        width: 100%;
+    }
+
+    .abt-bg {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .responsive-abt-banner {
+        width: 75% !important;
+    }
+    .about-img-style{
+        display: none !important;
+    }
+}
+
+@media (max-width:700px) {
+    .feature-bg:after {
+        position: relative;
+        width: 90%;
+        height: 300px;
+        border-radius: 0;
+        box-shadow: none;
+        order: -1;
+        margin: 0 auto;
+    }
+
+    .abt-bg {
+        width: 100%;
+    }
+
+    .responsive-abt-banner {
+        width: 100% !important;
+    }
+}
+
+@media (max-width:425px) {
+    .responsive-abt-col {
+        flex: none !important;
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
 }
