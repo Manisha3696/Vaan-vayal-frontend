@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../Css/Style.css'
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import banner from '../../images/Global buyers/banner-2.jpg'
 import country1 from '../../images/Global buyers/country-1.jpg';

@@ -28,7 +28,7 @@ function Header() {
                             </Link>
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" to="/product1">Spices</Link></li>
-                                <li><Link className="dropdown-item" to="/product2">Rice</Link></li>
+                                <li><Link className="dropdown-item" to="/rice">Rice</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Flours</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Appalam</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Masala Powder</Link></li>
@@ -38,13 +38,13 @@ function Header() {
                                 <li><Link className="dropdown-item" to="/product3">Salt</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Pickel</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Rice Paste</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Rava $ Soya Chunks</Link></li>
+                                <li><Link className="dropdown-item" to="/product3">Rava & Soya Chunks</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Snacks</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Flower</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/Globalbuyers">Global Buyers</Link>
+                            <Link className="nav-link" to="/rice">Global Buyers</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/contact">Contact</Link>
