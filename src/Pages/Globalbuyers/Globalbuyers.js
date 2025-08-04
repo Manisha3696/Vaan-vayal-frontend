@@ -11,10 +11,20 @@ import country5 from '../../images/Global buyers/country-5.jpg';
 import country6 from '../../images/Global buyers/country-6.jpg';
 import country7 from '../../images/Global buyers/country-7.jpg';
 import country8 from '../../images/Global buyers/country-8.jpg';
-function Globalbuyers() {
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+const Globalbuyers = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      easing: "ease-in-out", 
+
+    });
+  }, []);
   return (
     <div>
-      <div
+      <div data-aos="fade-up"
         className="position-relative text-white text-center"
         style={{
           backgroundImage: `url(${banner})`,
@@ -25,14 +35,14 @@ function Globalbuyers() {
         }}
       >
 
-        <div
+        <div 
           className="position-absolute top-0 start-0 w-100 h-100"
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}
         ></div>
 
         <Container className="position-relative z-1 h-100 d-flex align-items-center justify-content-center">
           <Row className="w-100">
-            <Col className="px-3 px-md-3 py-5" >
+            <Col data-aos="fade-up" className="px-3 px-md-3 py-5" >
               <h1 className="fw-bold display-6 display-md-5" style={{ color: 'white', fontSize: '32px' }}>
                 Partner with Vaan Vayal <br />
                 Your Trusted Indian Agro Products Exporter
@@ -41,7 +51,7 @@ function Globalbuyers() {
           </Row>
         </Container>
       </div>
-      <section className="py-5 bg-light">
+      <section data-aos="fade-up" className="py-5 bg-light">
         <Container>
           <h2
             className="text-center mb-4 fw-bold"
@@ -52,7 +62,7 @@ function Globalbuyers() {
             Our Journey with International Buyers
           </h2>
 
-          <Row className="g-4 justify-content-center">
+          <Row data-aos="fade-up" className="g-4 justify-content-center">
             {[
               { name: 'Australia', image: country1, link: '/Contact' },
               { name: 'Malaysia', image: country2, link: '/Contact' },
@@ -63,7 +73,7 @@ function Globalbuyers() {
               { name: 'Chile', image: country7, link: '/Contact' },
               { name: 'Taiwan', image: country8, link: '/Contact' },
             ].map((cat, i) => (
-              <Col key={i} md={3} sm={6} xs={12}>
+              <Col data-aos="fade-up" key={i} md={3} sm={6} xs={12}>
                 <Link to={cat.link} className="text-decoration-none text-dark">
                   <Card className="text-center h-100 shadow-sm border-0 category-card">
                     <Card.Body className="d-flex flex-column justify-content-center align-items-center">

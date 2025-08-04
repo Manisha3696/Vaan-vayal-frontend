@@ -9,7 +9,17 @@ import category3 from '../../images/spices/flour.jpg'
 import category4 from '../../images/spices/spices.jpg';
 import '../../Css/Style.css'
 import { Link } from 'react-router-dom';
-function Home() {
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      easing: "ease-in-out", 
+
+    });
+  }, []);
   const services = [
     {
       title: 'Customer Satisfaction',
@@ -29,11 +39,11 @@ function Home() {
   ];
   return (
     <div>
-      <section className="spices-banner">
+      <section data-aos="fade-up" className="spices-banner">
         <Container fluid>
           <Row className="align-items-center">
             <Col md={6} className="px-5">
-              <div className="text-section">
+              <div data-aos="fade-up"className="text-section">
                 <h1 className="display-5 fw-bold">
                   Discover the <span className="highlight">True Essence</span> of Spices
                 </h1>
@@ -44,14 +54,14 @@ function Home() {
               </div>
             </Col>
             <Col md={6} className="image-section">
-              <div className="curved-image-wrapper">
+              <div data-aos="fade-up" className="curved-image-wrapper">
                 <img src={bannerImage} alt="Saffron Spices" className="curved-image" />
               </div>
             </Col>
           </Row>
         </Container>
       </section>
-      <section className="py-5 bg-light">
+      <section data-aos="fade-up"className="py-5 bg-light">
         <Container>
           <h2 className="text-center mb-4 fw-bold">Top Categories</h2>
          <Row className="g-4 justify-content-center">
@@ -65,7 +75,7 @@ function Home() {
       <Link to={cat.link} className="text-decoration-none text-dark">
         <Card className="text-center h-100 shadow-sm border-0 category-card">
           <Card.Body className="d-flex flex-column justify-content-center align-items-center">
-            <div className="category-icon mb-3">
+            <div data-aos="fade-up" className="category-icon mb-3">
               <img
                 src={cat.image}
                 alt={cat.name}
@@ -86,7 +96,7 @@ function Home() {
 </Row>
         </Container>
       </section>
-      <section className="py-5">
+      <section data-aos="fade-up"className="py-5">
         <Container>
           <Row className="align-items-center">
             <Col md={7} className="mb-4 mb-md-0 pe-md-5">
@@ -97,14 +107,14 @@ function Home() {
             style={{maxWidth:'85%'}}  />
             </Col>
 
-            <Col md={5}>
-              <h2
+            <Col data-aos="fade-up" md={5}>
+              <h2 
                 className="fw-bold mb-3 fs-3 text-center text-md-start"
                 style={{ padding: "20px 0" }}
               >
                 Why Choose Vaan Vayal?
               </h2>
-              <ul
+              <ul 
                 className="list-unstyled"
                 style={{ fontSize: "1rem", lineHeight: "1.7" }}
               >
@@ -124,7 +134,7 @@ function Home() {
         </Container>
       </section>
       <section className="py-5 bg-white">
-        <Container>
+        <Container data-aos="fade-up">
           <p className="text-success text-center fw-semibold mb-3" style={{ fontSize: '25px' }}>Explore Our Services</p>
           <h2 className="text-center fw-bold mb-5 display-6" style={{ fontSize: '30px' }}>
             Pure, Native, and Wholesome <br></br> Delivered Fresh
@@ -133,7 +143,7 @@ function Home() {
             {services.map((service, idx) => (
               <Col key={idx} md={4} sm={6}>
                 <Card className="text-center h-100 p-3 border-0 shadow-sm service-card">
-                  <div className="icon-wrapper mx-auto mb-3">
+                  <div data-aos="fade-up"className="icon-wrapper mx-auto mb-3">
                     <i className={`bi ${service.icon} fs-1 text-success`}></i>
                   </div>
                   <Card.Body>

@@ -6,14 +6,25 @@ import {
   LocationOn as LocationIcon
 } from '@mui/icons-material';
 
-function Contact() {
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+const Contact = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      easing: "ease-in-out", 
+
+    });
+  }, []);
+
   return (
     <>
-      <div class="breadcrumb-section breadcrumb-bg">
+      <div data-aos="fade-up" class="breadcrumb-section breadcrumb-bg">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 offset-lg-2 text-center">
-              <div class="breadcrumb-text">
+              <div data-aos="fade-up" class="breadcrumb-text">
                 <p style={{ color: "black" }}>If you have any Querires?</p>
                 <h1 style={{ color: "#2e7d32" }}>Contact Us</h1>
               </div>
@@ -33,11 +44,11 @@ function Contact() {
           <Grid item xs={12} md={6}>
             <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderRadius: 2, borderColor: '#e0e0e0' }}>
               <CardContent>
-                <Typography variant="h6" gutterBottom>
+                <Typography data-aos="fade-up" variant="h6" gutterBottom>
                   Get in Touch
                 </Typography>
                 <Divider sx={{ mb: 2 }} />
-                <Box component="form" noValidate autoComplete="off">
+                <Box data-aos="fade-up" component="form" noValidate autoComplete="off">
                   <div className="row mb-3">
                     <div className="col">
                       <TextField label="Name" fullWidth variant="outlined" />
@@ -52,7 +63,7 @@ function Contact() {
                   <div className="mb-3">
                     <TextField label="Your Message" multiline rows={4} fullWidth variant="outlined" />
                   </div>
-                  <Button variant="contained" sx={{ backgroundColor: "#198754", color: "white" }}>
+                  <Button data-aos="fade-up" variant="contained" sx={{ backgroundColor: "#198754", color: "white" }}>
                     Send Message
                   </Button>
                 </Box>
@@ -61,7 +72,7 @@ function Contact() {
 
           </Grid>
 
-          <Grid item xs={12} md={6}>
+          <Grid data-aos="fade-up" item xs={12} md={6}>
             <Card variant="outlined" sx={{ borderRadius: 2, mb: 4, borderColor: '#e0e0e0' }}>
               <CardContent>
                 <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold', display: 'flex', alignItems: 'center' }}>
@@ -183,7 +194,7 @@ function Contact() {
           </Grid>
         </Grid>
 
-        <div className="mt-5">
+        <div data-aos="fade-up"className="mt-5">
           <iframe
             title="Google Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.387618390728!2d-88.30946218455388!3d42.040230979208464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880faa4e4b2b3d95%3A0xc43bd6c979f0f2c9!2s1425%20N%20McLean%20Blvd%2C%20Elgin%2C%20IL%2060123%2C%20USA!5e0!3m2!1sen!2sin!4v1657275953905!5m2!1sen!2sin"

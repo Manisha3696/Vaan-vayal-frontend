@@ -9,11 +9,20 @@ import Product4 from '../../images/About/jaggery.jpg'
 import Product5 from '../../images/About/spices.jpg'
 import abtBanner from '../../images/About/ingredient-bags-full-flour.jpg'
 
-function About() {
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      easing: "ease-in-out", 
 
+    });
+  }, []);
   return (
     <div>
-      <section
+      <section data-aos="fade-up"
         style={{
           backgroundImage: `url(${banner})`,
           backgroundRepeat: 'no-repeat',
@@ -22,7 +31,7 @@ function About() {
       >
         <div className="container-lg">
           <div className="row">
-            <div className="col-lg-6 pt-5 mt-5 responsive-abt-banner">
+            <div data-aos="fade-up" className="col-lg-6 pt-5 mt-5 responsive-abt-banner">
               <h2 className="display-1 ls-1"><span className="fw-bold text-custom">Organic</span> Products at your <span className="fw-bold">Doorsteps</span></h2>
               <p className="fs-4">Bringing nature's purity from farm to your home.</p>
               <div className="row my-5">
@@ -46,13 +55,13 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className='col-lg-6 d-flex align-item-center p-5'>
+            <div data-aos="fade-up" className='col-lg-6 d-flex align-item-center p-5'>
               <img src={abtBanner} alt='Abt-banner' className='about-img-style' />
             </div>
           </div>
         </div>
       </section>
-      <div className="abt-section mt-75 mb-75">
+      <div data-aos="fade-up" className="abt-section mt-75 mb-75">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12">
@@ -60,7 +69,7 @@ function About() {
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
-              <div className="abt-text">
+              <div data-aos="fade-up" className="abt-text">
                 {/* <p className="top-sub">Since Year 2025</p> */}
                 <h2 style={{ textAlign: "start" }}>We are <span className="green-text">Vaan Vayal</span></h2>
                 <p>Vaan Vayal is your trusted source for authentic, organic, and natural food products. With a strong commitment to purity and quality, we ensure that every item we deliver is fresh, safe, and packed with nutritional value.</p>
@@ -76,7 +85,7 @@ function About() {
         </div>
       </div>
       <section className="ftco-section" style={{ backgroundColor: "#fff3cd" }}>
-        <div className="container">
+        <div data-aos="fade-up" className="container">
           <div className="row justify-content-center mb-5 pb-3">
             <div
               className="col-md-7 heading-section text-center"
@@ -92,7 +101,7 @@ function About() {
                 <div className="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
                   <span className="fas fa-shipping-fast"></span>
                 </div>
-                <div className="media-body">
+                <div data-aos="fade-up" className="media-body">
                   <h3 className="heading">Free Shipping</h3>
                   <span>On order over $100</span>
                 </div>
@@ -103,7 +112,7 @@ function About() {
                 <div className="icon bg-color-1 d-flex justify-content-center align-items-center mb-2">
                   <span className="fas fa-leaf"></span>
                 </div>
-                <div className="media-body">
+                <div data-aos="fade-up" className="media-body">
                   <h3 className="heading">Always Fresh</h3>
                   <span>Product well package</span>
                 </div>
@@ -114,7 +123,7 @@ function About() {
                 <div className="icon bg-color-1 d-flex justify-content-center align-items-center mb-2">
                   <span className="fas fa-award"></span>
                 </div>
-                <div className="media-body">
+                <div data-aos="fade-up" className="media-body">
                   <h3 className="heading">Superior Quality</h3>
                   <span>Quality Products</span>
                 </div>
@@ -125,7 +134,7 @@ function About() {
                 <div className="icon bg-color-1 d-flex justify-content-center align-items-center mb-2">
                   <span className="fas fa-headset"></span>
                 </div>
-                <div className="media-body">
+                <div data-aos="fade-up" className="media-body">
                   <h3 className="heading">Support</h3>
                   <span>24/7 Support</span>
                 </div>
@@ -136,7 +145,7 @@ function About() {
                 <div className="icon bg-color-1 d-flex justify-content-center align-items-center mb-2">
                   <span className="fas fa-headset"></span>
                 </div>
-                <div className="media-body">
+                <div data-aos="fade-up" className="media-body">
                   <h3 className="heading">Sustainably Sourced</h3>
                   <span>Eco-friendly</span>
                 </div>
@@ -146,7 +155,7 @@ function About() {
         </div>
       </section>
       <section className="py-4">
-        <div className="container-lg">
+        <div data-aos="fade-up" className="container-lg">
           <h2 className="my-4">People are also looking for</h2>
           <a href="/" className="btn me-2 mb-2" style={{ backgroundColor: "#e6f3e6", color: "#000" }}>Spices</a>
           <a href="/" className="btn me-2 mb-2" style={{ backgroundColor: "#e6f3e6", color: "#000" }}>Pickles</a>
@@ -162,26 +171,26 @@ function About() {
         </div>
       </section>
       <section className="py-5">
-        <div className="container">
-          <div className="row justify-content-center">
+        <div  className="container">
+          <div data-aos="fade-up"className="row justify-content-center">
             {/* Image 1 */}
-            <div className="col-md-4 mb-5">
+            <div data-aos="fade-up" className="col-md-4 mb-5">
               <img src={Product1} alt="Image-1" className="img-fluid1 rounded shadow" />
             </div>
             {/* Image 2 */}
-            <div className="col-md-4 mb-5">
+            <div data-aos="fade-up" className="col-md-4 mb-5">
               <img src={Product2} alt="Image-2" className="img-fluid1 rounded shadow" />
             </div>
             {/* Image 3 */}
-            <div className="col-md-4 mb-5">
+            <div data-aos="fade-up"className="col-md-4 mb-5">
               <img src={Product3} alt="Image-3" className="img-fluid1 rounded shadow" />
             </div>
             {/* Image 4 */}
-            <div className="col-md-4 mb-5">
+            <div data-aos="fade-up"className="col-md-4 mb-5">
               <img src={Product4} alt="Image-4" className="img-fluid1 rounded shadow" />
             </div>
             {/* Image 5 */}
-            <div className="col-md-4 mb-5">
+            <div data-aos="fade-up" className="col-md-4 mb-5">
               <img src={Product5} alt="Image-5" className="img-fluid1 rounded shadow" />
             </div>
           </div>
@@ -192,7 +201,7 @@ function About() {
         <div className="container">
           <div className="row">
             <div className="col-lg-7">
-              <div className="featured-text">
+              <div data-aos="fade-up" className="featured-text">
                 <h2 className="pb-3">Why <span className="green-text">Vaan Vayal</span></h2>
                 <div className="row">
                   <div className="col-lg-6 col-md-6 mb-4 mb-md-5">
@@ -200,7 +209,7 @@ function About() {
                       <div className="list-icon">
                         <i className="fas fa-shipping-fast"></i>
                       </div>
-                      <div className="content">
+                      <div data-aos="fade-up" className="content">
                         <p>At Vaan Vayal, we are committed to bringing you nature’s finest with authenticity and care.</p>
                       </div>
                     </div>
@@ -210,7 +219,7 @@ function About() {
                       <div className="list-icon">
                         <i className="fas fa-money-bill-alt"></i>
                       </div>
-                      <div className="content">
+                      <div data-aos="fade-up" className="content">
                         <p>Our products are grown and sourced using sustainable and traditional methods that honor the earth.</p>
                       </div>
                     </div>
@@ -220,7 +229,7 @@ function About() {
                       <div class="list-icon">
                         <i class="fas fa-briefcase"></i>
                       </div>
-                      <div class="content">
+                      <div data-aos="fade-up" class="content">
                         <p>Every item reflects our dedication to purity, freshness, and trust.</p>
                       </div>
                     </div>
@@ -230,7 +239,7 @@ function About() {
                       <div class="list-icon">
                         <i class="fas fa-sync-alt"></i>
                       </div>
-                      <div class="content">
+                      <div data-aos="fade-up" class="content">
                         <p>Choose Vaan Vayal for a wholesome experience rooted in quality and tradition.</p>
                       </div>
                     </div>
