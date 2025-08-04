@@ -25,7 +25,7 @@ const Contact = () => {
           <div class="row">
             <div class="col-lg-8 offset-lg-2 text-center">
               <div data-aos="fade-up" class="breadcrumb-text">
-                <p style={{ color: "black" }}>If you have any Querires?</p>
+                <p style={{ color: "black" }}>If you have any Queries?</p>
                 <h1 style={{ color: "#2e7d32" }}>Contact Us</h1>
               </div>
             </div>
@@ -123,7 +123,7 @@ const Contact = () => {
                     <LocationIcon color="primary" sx={{ mr: 2 }} />
                     <Box>
                       <Typography variant="subtitle2" sx={{ fontWeight: 'bold' }}>Address</Typography>
-                      <Typography variant="body1">1234, asdfghjkl</Typography>
+                      <Typography variant="body1">No:5/199,Mugappair East, Chennai-600 037</Typography>
                     </Box>
                   </Box>
                 </Grid>
