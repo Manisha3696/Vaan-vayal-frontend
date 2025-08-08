@@ -29,7 +29,7 @@ function Header() {
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" to="/product1">Spices</Link></li>
                                 <li><Link className="dropdown-item" to="/rice">Rice</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Flours</Link></li>
+                                <li><Link className="dropdown-item" to="/flour">Flours</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Appalam</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Masala Powder</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Oil</Link></li>

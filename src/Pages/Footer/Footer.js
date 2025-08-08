@@ -25,7 +25,7 @@ function Footer() {
             </section>
 
             <section className="pt-3">
-                <div className="container-fluid text-center text-md-start px-3">
+                <div className="container-fluid text-start text-md-start px-3">
                     <div className="row">
                         <div className="col-md-3 col-lg-4 col-xl-3 mb-2">
                             <img src={Logo} alt="Company Logo" height="80" className="mb-3" />
