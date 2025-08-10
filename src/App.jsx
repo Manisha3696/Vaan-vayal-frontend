@@ -31,10 +31,10 @@ function App() {
 
           {/* Main Products Pages  */}
           <Route path='/rice' element={<Rice />} />
+          <Route path='/flour' element={<Flour/>} />
 
           {/* Sub Products Page  */}
           <Route path="/rice/:name" element={<RiceSubPage />} />
-          <Route path='/Flour' element={<Flour/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

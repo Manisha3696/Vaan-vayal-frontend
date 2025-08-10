@@ -1,12 +1,11 @@
 import React from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
-import { CheckCircleFill } from 'react-bootstrap-icons';
-import bannerImage from '../../images/spices/banner-1.png';
-import choose from '../../images/spices/choose-bg.jpg';
-import category1 from '../../images/spices/pooja-bg.jpg';
-import category2 from '../../images/spices/rice.jpg';
-import category3 from '../../images/spices/flour.jpg'
-import category4 from '../../images/spices/spices.jpg';
+import bannerImage from '../../images/Home/banner-1.png';
+import choose from '../../images/Home/choose-bg.jpg';
+import category1 from '../../images/Home/pooja-bg.jpg';
+import category2 from '../../images/Home/rice.jpg';
+import category3 from '../../images/Home/flour.jpg'
+import category4 from '../../images/Home/spices.jpg';
 import '../../Css/Style.css'
 import { Link } from 'react-router-dom';
 import AOS from "aos";
