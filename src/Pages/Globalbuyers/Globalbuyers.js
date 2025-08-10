@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../Css/Style.css'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { Modal, Box, Typography, TextField, Grid, IconButton } from '@mui/material';
+import { Modal, Box, Typography, TextField, Grid, IconButton, MenuItem } from '@mui/material';
 import { Link } from 'react-router-dom';
 import banner from '../../images/Global buyers/banner-2.jpg'
 import country1 from '../../images/Global buyers/country-1.jpg';
@@ -115,7 +115,7 @@ const Globalbuyers = () => {
                         />
                       </div>
                       <Card.Title className="fw-bold">{cat.name}</Card.Title>
-                      <Button className='btn btn-0 btn-success w-100' style={{ borderRadius: 0 }} onClick={() => handleOpen(cat.image)}> <IoSend style={{ marginRight: "8px", marginTop: "-2px", alignItems: 'center' }} /> Send Request</Button>
+                      <Button className='btn btn-0 btn-success w-100' style={{ borderRadius: 0 }} onClick={() => handleOpen(cat.image)}> <IoSend style={{ marginRight: "8px", marginTop: "-2px", alignItems: 'center' }} /> Enquire for Import</Button>
                     </Card.Body>
                   </Card>
                 </Link>
@@ -126,7 +126,7 @@ const Globalbuyers = () => {
         <Modal open={open} onClose={handleClose}>
           <Box sx={style}>
             <Grid container spacing={4}>
-              <Grid item size={6} sx={{ justifyContent: 'center', alignItems: 'center' }}>
+              <Grid item size={{ xs: 12, sm: 12, md: 6 }}>
                 <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                   VAAN VAYAL BRAND
                 </Typography>
@@ -134,7 +134,7 @@ const Globalbuyers = () => {
                   <img
                     src={image}
                     alt="Vaan Vayal"
-                    style={{ maxWidth: '275px', height: 'auto',marginTop:'50px' }}
+                    style={{ maxWidth: '275px', height: 'auto', marginTop: '50px' }}
                   />
                 </div>
                 <IconButton
@@ -151,22 +151,23 @@ const Globalbuyers = () => {
                 </IconButton>
               </Grid>
 
-              <Grid item size={6}>
+              <Grid item size={{ xs: 12, sm: 12, md: 6 }}>
                 <TextField label="Name" variant="outlined" fullWidth margin="normal" />
                 <TextField label="Email" variant="outlined" fullWidth margin="normal" />
                 <TextField label="Phone Number" variant="outlined" fullWidth margin="normal" />
 
-                {/* <TextField
+                <TextField
                   label="I like to Enquire for"
                   variant="outlined"
                   select
                   fullWidth
                   margin="normal"
                 >
-                  <MenuItem value="Grocery store">Grocery store</MenuItem>
-                  <MenuItem value="Wholesale">Wholesale</MenuItem>
-                  <MenuItem value="Export">Export</MenuItem>
-                </TextField> */}
+                  <MenuItem value="Importer">Importer</MenuItem>
+                  <MenuItem value="Wholesaler">Wholesaler</MenuItem>
+                  <MenuItem value="Distributor">Distributor</MenuItem>
+                  <MenuItem value="Retailer">Retailer</MenuItem>
+                </TextField>
 
                 <TextField
                   label="Comments"
