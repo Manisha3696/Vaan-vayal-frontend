@@ -106,30 +106,30 @@ const Home = () => {
                 className="img-fluid rounded-4 shadow"
             style={{maxWidth:'85%'}}  />
             </Col>
+<Col 
+  data-aos="fade-up" 
+  md={5} 
+  className="mt-n2 mt-md-0" 
+>
+  <h2 
+    className="fw-bold mb-3 fs-3 text-center text-md-start py-4"
+  >
+    Why Choose Vaan Vayal?
+  </h2>
+  <p 
+    className="text-center text-md-start mb-0"
+  >
+    Vaan Vayal Enterprises brings you nature’s best — fresh, pure, and full of goodness. 
+    We carefully source our products directly from trusted farms and suppliers to ensure 
+    you get nothing but authentic taste and uncompromised quality. From aromatic spices 
+    and wholesome rice to traditional snacks and healthy essentials, every product is packed 
+    with care to preserve its natural flavor and freshness. With our commitment to hygiene, 
+    sustainable practices, and customer satisfaction, Vaan Vayal stands for trust you can 
+    taste in every bite.
+  </p>
+</Col>
 
-            <Col data-aos="fade-up" md={5}>
-              <h2 
-                className="fw-bold mb-3 fs-3 text-center text-md-start"
-                style={{ padding: "20px 0" }}
-              >
-                Why Choose Vaan Vayal?
-              </h2>
-              <ul 
-                className="list-unstyled"
-                style={{ fontSize: "1rem", lineHeight: "1.7" }}
-              >
-                {[
-                  'Sourced directly from trusted native farmers',
-                  'Zero chemicals — 100% natural and pure',
-                  'Processed with utmost hygiene and care',
-                ].map((point, i) => (
-                  <li key={i} className="mb-2 d-flex align-items-start">
-                    <CheckCircleFill className="text-success me-2 mt-1" />
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            </Col>
+
           </Row>
         </Container>
       </section>

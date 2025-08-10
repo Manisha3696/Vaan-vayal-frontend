@@ -14,6 +14,7 @@ import Contact from './Pages/Contact/Contact';
 import Globalbuyers from './Pages/Globalbuyers/Globalbuyers';
 import Rice from './Pages/Products/Rice/Rice';
 import RiceSubPage from './Pages/ProductsSubPage/RiceSubPage/RiceSubPage';
+import Flour from './Pages/Products/Flour/Flour';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
 
           {/* Sub Products Page  */}
           <Route path="/rice/:name" element={<RiceSubPage />} />
-
+          <Route path='/Flour' element={<Flour/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
