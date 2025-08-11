@@ -14,7 +14,14 @@ import Contact from './Pages/Contact/Contact';
 import Globalbuyers from './Pages/Globalbuyers/Globalbuyers';
 import Rice from './Pages/Products/Rice/Rice';
 import RiceSubPage from './Pages/ProductsSubPage/RiceSubPage/RiceSubPage';
+import Spices from './Pages/Products/Spices/Spices';
+import SpicesSubPage from './Pages/ProductsSubPage/SpicesSubPage/SpicesSubPage';
+import Appalam from './Pages/Products/Appalam/Appalam';
+import AppalamSubPage from './Pages/ProductsSubPage/AppalamSubPage/AppalamSubPage';
 import Flour from './Pages/Products/Flour/Flour';
+import FlourSubPage from './Pages/ProductsSubPage/FlourSubPage/FlourSubPage';
+import MasalaSubPage from './Pages/ProductsSubPage/MasalaSubPage/MasalaSubPage';
+import Masala from './Pages/Products/Masala/Masala';
 
 
 function App() {
@@ -32,9 +39,19 @@ function App() {
           {/* Main Products Pages  */}
           <Route path='/rice' element={<Rice />} />
           <Route path='/flour' element={<Flour/>} />
+          <Route path='/Spices' element={<Spices/>} />
+          <Route path='/Appalam' element={<Appalam/>} />
+          <Route path='/Masala' element={<Masala/>} />
+<Route path='/Flour' element={<Flour/>} />
+
 
           {/* Sub Products Page  */}
           <Route path="/rice/:name" element={<RiceSubPage />} />
+          <Route path="/Spices/:name" element={<SpicesSubPage />} />
+          <Route path="/Appalam/:name" element={<AppalamSubPage />} />
+          <Route path="/Flour/:name" element={<FlourSubPage />} />
+          <Route path="/Flour/:name" element={<MasalaSubPage />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

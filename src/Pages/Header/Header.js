@@ -27,11 +27,11 @@ function Header() {
                                 Products
                             </Link>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to="/product1">Spices</Link></li>
+                                <li><Link className="dropdown-item" to="/Spices">Spices</Link></li>
                                 <li><Link className="dropdown-item" to="/rice">Rice</Link></li>
                                 <li><Link className="dropdown-item" to="/flour">Flours</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Appalam</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Masala Powder</Link></li>
+                                <li><Link className="dropdown-item" to="/Appalam">Appalam</Link></li>
+                                <li><Link className="dropdown-item" to="/Masala">Masala Powder</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Oil</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Jaggery</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Aval & Pori</Link></li>

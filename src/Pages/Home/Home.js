@@ -14,8 +14,8 @@ import { useEffect } from "react";
 const Home = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      easing: "ease-in-out", 
+      duration: 1000,
+      easing: "ease-in-out",
 
     });
   }, []);
@@ -42,7 +42,7 @@ const Home = () => {
         <Container fluid>
           <Row className="align-items-center">
             <Col md={6} className="px-5">
-              <div data-aos="fade-up"className="text-section">
+              <div data-aos="fade-up" className="text-section">
                 <h1 className="display-5 fw-bold">
                   Discover the <span className="highlight">True Essence</span> of Spices
                 </h1>
@@ -60,42 +60,42 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      <section data-aos="fade-up"className="py-5 bg-light">
+      <section data-aos="fade-up" className="py-5 bg-light">
         <Container>
           <h2 className="text-center mb-4 fw-bold">Top Categories</h2>
-         <Row className="g-4 justify-content-center">
-  {[
-    { name: 'Pooja', image: category1, link: '/Contact' },
-    { name: 'Spices', image: category2, link: '/Contact' },
-    { name: 'Flours', image: category3, link: '/Contact' },
-    { name: 'Rice', image: category4, link: '/Contact' },
-  ].map((cat, i) => (
-    <Col key={i} md={3} sm={6} xs={12}>
-      <Link to={cat.link} className="text-decoration-none text-dark">
-        <Card className="text-center h-100 shadow-sm border-0 category-card">
-          <Card.Body className="d-flex flex-column justify-content-center align-items-center">
-            <div data-aos="fade-up" className="category-icon mb-3">
-              <img
-                src={cat.image}
-                alt={cat.name}
-                className="img-fluid"
-                style={{
-                  width: '230px',
-                  height: '180px',
-                  objectFit: 'contain',
-                }}
-              />
-            </div>
-            <Card.Title className="fw-bold">{cat.name}</Card.Title>
-          </Card.Body>
-        </Card>
-      </Link>
-    </Col>
-  ))}
-</Row>
+          <Row className="g-4 justify-content-center">
+            {[
+              { name: 'Pooja', image: category1, link: '/Contact' },
+              { name: 'Spices', image: category2, link: '/Contact' },
+              { name: 'Flours', image: category3, link: '/Contact' },
+              { name: 'Rice', image: category4, link: '/Contact' },
+            ].map((cat, i) => (
+              <Col key={i} md={3} sm={6} xs={12}>
+                <Link to={cat.link} className="text-decoration-none text-dark">
+                  <Card className="text-center h-100 shadow-sm border-0 category-card">
+                    <Card.Body className="d-flex flex-column justify-content-center align-items-center">
+                      <div data-aos="fade-up" className="category-icon mb-3">
+                        <img
+                          src={cat.image}
+                          alt={cat.name}
+                          className="img-fluid"
+                          style={{
+                            width: '230px',
+                            height: '180px',
+                            objectFit: 'contain',
+                          }}
+                        />
+                      </div>
+                      <Card.Title className="fw-bold">{cat.name}</Card.Title>
+                    </Card.Body>
+                  </Card>
+                </Link>
+              </Col>
+            ))}
+          </Row>
         </Container>
       </section>
-      <section data-aos="fade-up"className="py-5">
+      <section data-aos="fade-up" className="py-5">
         <Container>
           <Row className="align-items-center">
             <Col md={7} className="mb-4 mb-md-0 pe-md-5">
@@ -103,30 +103,33 @@ const Home = () => {
                 src={choose}
                 alt="Fresh groceries"
                 className="img-fluid rounded-4 shadow"
-            style={{maxWidth:'85%'}}  />
+                style={{ maxWidth: '85%' }} />
             </Col>
-<Col 
-  data-aos="fade-up" 
-  md={5} 
-  className="mt-n2 mt-md-0" 
->
-  <h2 
-    className="fw-bold mb-3 fs-3 text-center text-md-start py-4"
-  >
-    Why Choose Vaan Vayal?
-  </h2>
-  <p 
-    className="text-center text-md-start mb-0"
-  >
-    Vaan Vayal Enterprises brings you nature’s best — fresh, pure, and full of goodness. 
-    We carefully source our products directly from trusted farms and suppliers to ensure 
-    you get nothing but authentic taste and uncompromised quality. From aromatic spices 
-    and wholesome rice to traditional snacks and healthy essentials, every product is packed 
-    with care to preserve its natural flavor and freshness. With our commitment to hygiene, 
-    sustainable practices, and customer satisfaction, Vaan Vayal stands for trust you can 
-    taste in every bite.
-  </p>
-</Col>
+            <Col
+              data-aos="fade-up"
+              md={5}
+              className="mt-n4 mt-md-0" style={{ margin: '75px 0px'}}
+            >
+              <h2
+                className="fw-bold mb-3 fs-3 text-center text-md-start py-4"
+              
+              >
+                Why Choose Vaan Vayal?
+              </h2>
+              <p
+                className="text-center text-md-start mb-0"
+                style={{ marginTop: "-5px" }} 
+              >
+                Vaan Vayal Enterprises brings you nature’s best — fresh, pure, and full of goodness.
+                We carefully source our products directly from trusted farms and suppliers to ensure
+                you get nothing but authentic taste and uncompromised quality. From aromatic spices
+                and wholesome rice to traditional snacks and healthy essentials, every product is packed
+                with care to preserve its natural flavor and freshness. With our commitment to hygiene,
+                sustainable practices, and customer satisfaction, Vaan Vayal stands for trust you can
+                taste in every bite.
+              </p>
+            </Col>
+
 
 
           </Row>
@@ -142,7 +145,7 @@ const Home = () => {
             {services.map((service, idx) => (
               <Col key={idx} md={4} sm={6}>
                 <Card className="text-center h-100 p-3 border-0 shadow-sm service-card">
-                  <div data-aos="fade-up"className="icon-wrapper mx-auto mb-3">
+                  <div data-aos="fade-up" className="icon-wrapper mx-auto mb-3">
                     <i className={`bi ${service.icon} fs-1 text-success`}></i>
                   </div>
                   <Card.Body>
