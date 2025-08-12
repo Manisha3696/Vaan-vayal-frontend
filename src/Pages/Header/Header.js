@@ -32,16 +32,17 @@ function Header() {
                                 <li><Link className="dropdown-item" to="/flour">Flours</Link></li>
                                 <li><Link className="dropdown-item" to="/appalam">Appalam</Link></li>
                                 <li><Link className="dropdown-item" to="/masala">Masala Powder</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Oil</Link></li>
+                                <li><Link className="dropdown-item" to="/oil">Oil</Link></li>
                                 <li><Link className="dropdown-item" to="/jaggery">Jaggery</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Aval & Pori</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Salt</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Pickel</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Rice Paste</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Rava & Soya Chunks</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Snacks</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Flower</Link></li>
+                                <li><Link className="dropdown-item" to="/aval-pori">Aval & Pori</Link></li>
+                                <li><Link className="dropdown-item" to="/salt">Salt</Link></li>
+                                <li><Link className="dropdown-item" to="/pickle">Pickle</Link></li>
+                                <li><Link className="dropdown-item" to="/rice-paste">Rice Paste</Link></li>
+                                <li><Link className="dropdown-item" to="/rava-soya-chunks">Rava & Soya Chunks</Link></li>
+                                <li><Link className="dropdown-item" to="/snacks">Snacks</Link></li>
+                                <li><Link className="dropdown-item" to="/flower">Flower</Link></li>
                                 <li><Link className="dropdown-item" to="/pooja-products">Pooja Products</Link></li>
+
                             </ul>
                         </li>
                         <li className="nav-item">

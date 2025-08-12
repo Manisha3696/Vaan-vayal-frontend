@@ -26,6 +26,14 @@ import Pooja from './Pages/Products/Pooja/Pooja';
 import PoojaSubPage from './Pages/ProductsSubPage/PoojaSubPage/PoojaSubPage';
 import JaggeryList from './Pages/Products/Jaggery/Jaggery';
 import JaggerySubPage from './Pages/ProductsSubPage/JaggerySubPage/JaggerySubPage';
+import Salt from './Pages/Products/Salt/Salt';
+import SaltSubPage from './Pages/ProductsSubPage/SaltSubPage/SaltSubPage';
+import Pickel from './Pages/Products/Pickels/Pickels';
+import PickelSubPage from './Pages/ProductsSubPage/PickelSubPage/PickelSubPage';
+import Rava from './Pages/Products/Rava/Rava';
+import RavaSubPage from './Pages/ProductsSubPage/RavaSubPage/RavaSubPage';
+import Snacks from './Pages/Products/Snacks/Sancks';
+import SnacksSubPage from './Pages/ProductsSubPage/SnacksSubPage/SancksSubPage';
 
 
 function App() {
@@ -46,19 +54,25 @@ function App() {
           <Route path='/spices' element={<Spices />} />
           <Route path='/appalam' element={<Appalam />} />
           <Route path='/masala' element={<Masala />} />
-          <Route path='/flour' element={<Flour />} />
           <Route path='/pooja-products' element={<Pooja />} />
           <Route path='/jaggery' element={<JaggeryList />} />
+          <Route path='/salt' element={<Salt />} />
+          <Route path='/pickle' element={<Pickel />} />
+          <Route path='/rava' element={<Rava />} />
+          <Route path='/snacks' element={<Snacks />} />
 
           {/* Sub Products Page  */}
           <Route path="/rice/:name" element={<RiceSubPage />} />
           <Route path="/flour/:name" element={<FlourSubPage />} />
           <Route path="/spices/:name" element={<SpicesSubPage />} />
           <Route path="/appalam/:name" element={<AppalamSubPage />} />
-          <Route path="/flour/:name" element={<MasalaSubPage />} />
+          <Route path="/masala/:name" element={<MasalaSubPage />} />
           <Route path="/pooja-products/:name" element={<PoojaSubPage />} />
           <Route path="/jaggery/:name" element={<JaggerySubPage />} />
-
+          <Route path="/salt/:name" element={<SaltSubPage />} />
+          <Route path="/pickle/:name" element={<PickelSubPage />} />
+          <Route path="/rava/:name" element={<RavaSubPage />} />
+          <Route path="/snacks/:name" element={<SnacksSubPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
