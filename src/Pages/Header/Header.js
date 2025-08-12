@@ -35,12 +35,11 @@ function Header() {
                                 <li><Link className="dropdown-item" to="/product3">Oil</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Jaggery</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Aval & Pori</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Salt</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Pickel</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Rice Paste</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Rava & Soya Chunks</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Snacks</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Flower</Link></li>
+                                <li><Link className="dropdown-item" to="/Salt">Salt</Link></li>
+                                <li><Link className="dropdown-item" to="/Pickel">Pickel</Link></li>
+                                <li><Link className="dropdown-item" to="/Rava">Rava & Soya Chunks</Link></li>
+                                <li><Link className="dropdown-item" to="/Snacks">Snacks</Link></li>
+                                
                             </ul>
                         </li>
                         <li className="nav-item">

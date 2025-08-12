@@ -22,6 +22,14 @@ import Flour from './Pages/Products/Flour/Flour';
 import FlourSubPage from './Pages/ProductsSubPage/FlourSubPage/FlourSubPage';
 import MasalaSubPage from './Pages/ProductsSubPage/MasalaSubPage/MasalaSubPage';
 import Masala from './Pages/Products/Masala/Masala';
+import Salt from './Pages/Products/Salt/Salt';
+import SaltSubPage from './Pages/ProductsSubPage/SaltSubPage/SaltSubPage';
+import Pickel from './Pages/Products/Pickels/Pickels';
+import PickelSubPage from './Pages/ProductsSubPage/PickelSubPage/PickelSubPage';
+import Rava from './Pages/Products/Rava/Rava';
+import RavaSubPage from './Pages/ProductsSubPage/RavaSubPage/RavaSubPage';
+import Snacks from './Pages/Products/Snacks/Sancks';
+import SnacksSubPage from './Pages/ProductsSubPage/SnacksSubPage/SancksSubPage';
 
 
 function App() {
@@ -42,16 +50,20 @@ function App() {
           <Route path='/Spices' element={<Spices/>} />
           <Route path='/Appalam' element={<Appalam/>} />
           <Route path='/Masala' element={<Masala/>} />
-<Route path='/Flour' element={<Flour/>} />
-
-
+    <Route path='/Salt' element={<Salt/>} />
+          <Route path='/Pickel' element={<Pickel/>} />
+          <Route path='/Rava' element={<Rava/>} />
+<Route path='/Snacks' element={<Snacks/>} />
           {/* Sub Products Page  */}
           <Route path="/rice/:name" element={<RiceSubPage />} />
           <Route path="/Spices/:name" element={<SpicesSubPage />} />
           <Route path="/Appalam/:name" element={<AppalamSubPage />} />
           <Route path="/Flour/:name" element={<FlourSubPage />} />
           <Route path="/Flour/:name" element={<MasalaSubPage />} />
-
+          <Route path="/Salt/:name" element={<SaltSubPage />} />
+          <Route path="/Pickel/:name" element={<PickelSubPage />} />
+          <Route path="/Rava/:name" element={<RavaSubPage />} />
+ <Route path="/Snacks/:name" element={<SnacksSubPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
