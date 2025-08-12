@@ -31,7 +31,7 @@ function Flour() {
     <div>
       {/* Banner Section */}
       <div
-        className="position-relative text-white text-center"y
+        className="position-relative text-white text-center" y
         style={{
           backgroundImage: `url(${banner})`,
           backgroundSize: 'cover',
@@ -59,7 +59,7 @@ function Flour() {
       {/* Product Section */}
       <div className="container py-5">
         <h2 className="text-center mb-4" style={{ fontSize: '32px', fontWeight: '700', color: '#222' }}>
-         Pure Grains, Finely Milled
+          Pure Grains, Finely Milled
         </h2>
 
         <div className="row">
@@ -69,7 +69,7 @@ function Flour() {
               className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4"
             >
               <div
-                className="product h-100"
+                className="product h-80"
                 style={{
                   width: '100%',
                   textAlign: 'center',

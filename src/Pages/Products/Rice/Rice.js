@@ -63,7 +63,7 @@ function RiceList() {
               className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4"
             >
               <div
-                className="product h-100"
+                className="product h-80"
                 style={{
                   width: '100%',
                   textAlign: 'center',
@@ -125,16 +125,16 @@ function RiceList() {
                 </Link>
 
                 {/* Title */}
-               <div className="text-center" style={{ padding: '10px 10px 15px 10px' }}>
-  <h6 className="mb-2" style={{ fontSize: '16px', fontWeight: 600 }}>
-    <Link
-      to={`/rice/${encodeURIComponent(item.name)}`}
-      style={{ textDecoration: 'none', color: '#222' }}
-    >
-      {item.name}
-    </Link>
-  </h6>
-</div>
+                <div className="text-center" style={{ padding: '10px 10px 15px 10px' }}>
+                  <h6 className="mb-2" style={{ fontSize: '16px', fontWeight: 600 }}>
+                    <Link
+                      to={`/rice/${encodeURIComponent(item.name)}`}
+                      style={{ textDecoration: 'none', color: '#222' }}
+                    >
+                      {item.name}
+                    </Link>
+                  </h6>
+                </div>
               </div>
             </div>
           ))}

@@ -52,7 +52,7 @@ function Masala() {
       {/* Product Section */}
       <div className="container py-5">
         <h2 className="text-center mb-4" style={{ fontSize: '32px', fontWeight: '700', color: '#222' }}>
-        Naturaly Grown, Globally known
+          Naturaly Grown, Globally known
         </h2>
 
         <div className="row">
@@ -62,7 +62,7 @@ function Masala() {
               className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4"
             >
               <div
-                className="product h-100"
+                className="product h-80"
                 style={{
                   width: '100%',
                   textAlign: 'center',

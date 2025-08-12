@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { SpicesVarieties } from '../../Products/Spices/Spices';
-import Spices from '../../Products/Spices/Spices';
 
 function SpicesSubPage() {
     const { name } = useParams();

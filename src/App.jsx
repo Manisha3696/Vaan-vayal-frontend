@@ -22,6 +22,10 @@ import Flour from './Pages/Products/Flour/Flour';
 import FlourSubPage from './Pages/ProductsSubPage/FlourSubPage/FlourSubPage';
 import MasalaSubPage from './Pages/ProductsSubPage/MasalaSubPage/MasalaSubPage';
 import Masala from './Pages/Products/Masala/Masala';
+import Pooja from './Pages/Products/Pooja/Pooja';
+import PoojaSubPage from './Pages/ProductsSubPage/PoojaSubPage/PoojaSubPage';
+import JaggeryList from './Pages/Products/Jaggery/Jaggery';
+import JaggerySubPage from './Pages/ProductsSubPage/JaggerySubPage/JaggerySubPage';
 
 
 function App() {
@@ -38,19 +42,22 @@ function App() {
 
           {/* Main Products Pages  */}
           <Route path='/rice' element={<Rice />} />
-          <Route path='/flour' element={<Flour/>} />
-          <Route path='/Spices' element={<Spices/>} />
-          <Route path='/Appalam' element={<Appalam/>} />
-          <Route path='/Masala' element={<Masala/>} />
-<Route path='/Flour' element={<Flour/>} />
-
+          <Route path='/flour' element={<Flour />} />
+          <Route path='/spices' element={<Spices />} />
+          <Route path='/appalam' element={<Appalam />} />
+          <Route path='/masala' element={<Masala />} />
+          <Route path='/flour' element={<Flour />} />
+          <Route path='/pooja-products' element={<Pooja />} />
+          <Route path='/jaggery' element={<JaggeryList />} />
 
           {/* Sub Products Page  */}
           <Route path="/rice/:name" element={<RiceSubPage />} />
-          <Route path="/Spices/:name" element={<SpicesSubPage />} />
-          <Route path="/Appalam/:name" element={<AppalamSubPage />} />
-          <Route path="/Flour/:name" element={<FlourSubPage />} />
-          <Route path="/Flour/:name" element={<MasalaSubPage />} />
+          <Route path="/flour/:name" element={<FlourSubPage />} />
+          <Route path="/spices/:name" element={<SpicesSubPage />} />
+          <Route path="/appalam/:name" element={<AppalamSubPage />} />
+          <Route path="/flour/:name" element={<MasalaSubPage />} />
+          <Route path="/pooja-products/:name" element={<PoojaSubPage />} />
+          <Route path="/jaggery/:name" element={<JaggerySubPage />} />
 
         </Routes>
         <Footer />

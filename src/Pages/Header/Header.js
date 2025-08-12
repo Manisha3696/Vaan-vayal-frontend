@@ -27,13 +27,13 @@ function Header() {
                                 Products
                             </Link>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to="/Spices">Spices</Link></li>
+                                <li><Link className="dropdown-item" to="/spices">Spices</Link></li>
                                 <li><Link className="dropdown-item" to="/rice">Rice</Link></li>
                                 <li><Link className="dropdown-item" to="/flour">Flours</Link></li>
-                                <li><Link className="dropdown-item" to="/Appalam">Appalam</Link></li>
-                                <li><Link className="dropdown-item" to="/Masala">Masala Powder</Link></li>
+                                <li><Link className="dropdown-item" to="/appalam">Appalam</Link></li>
+                                <li><Link className="dropdown-item" to="/masala">Masala Powder</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Oil</Link></li>
-                                <li><Link className="dropdown-item" to="/product3">Jaggery</Link></li>
+                                <li><Link className="dropdown-item" to="/jaggery">Jaggery</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Aval & Pori</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Salt</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Pickel</Link></li>
@@ -41,6 +41,7 @@ function Header() {
                                 <li><Link className="dropdown-item" to="/product3">Rava & Soya Chunks</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Snacks</Link></li>
                                 <li><Link className="dropdown-item" to="/product3">Flower</Link></li>
+                                <li><Link className="dropdown-item" to="/pooja-products">Pooja Products</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item">

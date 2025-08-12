@@ -103,7 +103,7 @@ function Spices() {
                             className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4"
                         >
                             <div
-                                className="product h-100"
+                                className="product h-80"
                                 style={{
                                     width: '100%',
                                     textAlign: 'center',

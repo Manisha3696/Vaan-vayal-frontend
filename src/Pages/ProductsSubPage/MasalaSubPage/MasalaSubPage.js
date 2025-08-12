@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { MasalaVarieties } from '../../Products/Masala/Masala';
-import Masala from '../../Products/Masala/Masala';
 
 function MasalaSubPage() {
     const { name } = useParams();
