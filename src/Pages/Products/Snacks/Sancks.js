@@ -21,7 +21,7 @@ import banner from '../../../images/snacks/snacks-banner.jpg';
 
 const SnacksVarieties = [
     { id: 1, name: "Peanut Chikkles", image: Sancks1 },
-    { id: 2, name: "Peanut Chikki Powder", image:Sancks2 },
+    { id: 2, name: "Peanut Chikki Powder", image: Sancks2 },
     { id: 3, name: "White Sesame Balls", image: Sancks3 },
     { id: 4, name: "Black Sesame Balls", image: Sancks4 },
     { id: 5, name: "Peanut Salt", image: Sancks5 },
@@ -29,14 +29,14 @@ const SnacksVarieties = [
     { id: 7, name: "Peanut Pepper ", image: Sancks7 },
     { id: 8, name: "Kamarcut ", image: Sancks8 },
     { id: 9, name: "Hot Mixture ", image: Sancks9 },
-    { id: 10, name: "Garlic Mixture ", image:  Sancks10 },
-    { id: 11, name: "Chana Fry", image:  Sancks11 },
-    { id: 12, name: "Kadalai Paruppu", image:  Sancks12 },
+    { id: 10, name: "Garlic Mixture ", image: Sancks10 },
+    { id: 11, name: "Chana Fry", image: Sancks11 },
+    { id: 12, name: "Kadalai Paruppu", image: Sancks12 },
     { id: 13, name: "Tapioca Chips  ", image: Sancks13 },
-    { id: 14, name: "Tapioca Stick  ", image:  Sancks14 },
-    { id: 15, name: "Thattai vadai", image:  Sancks15 },
-    { id: 16, name: "Banana Chips", image:  Sancks16 },
-   
+    { id: 14, name: "Tapioca Stick  ", image: Sancks14 },
+    { id: 15, name: "Thattai vadai", image: Sancks15 },
+    { id: 16, name: "Banana Chips", image: Sancks16 },
+
 ];
 
 function Snacks() {
@@ -82,7 +82,7 @@ function Snacks() {
                             className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4"
                         >
                             <div
-                                className="product h-100"
+                                className="product h-80"
                                 style={{
                                     width: '100%',
                                     textAlign: 'center',

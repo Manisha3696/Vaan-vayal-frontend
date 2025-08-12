@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { RavaVarieties } from '../../Products/Rava/Rava';
-import Rava from '../../Products/Rava/Rava';
 
 function RavaSubPage() {
     const { name } = useParams();

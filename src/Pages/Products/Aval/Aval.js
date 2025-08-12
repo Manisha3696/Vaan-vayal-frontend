@@ -1,40 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Pickel1 from '../../../images/Pickle/garlic-pickle-exporter-vaan-vayal-enterprises.jpg';
-import Pickel2 from '../../../images/Pickle/lime-pickle-exporter-vaan-vayal-enterprises.jpg';
-import Pickel3 from '../../../images/Pickle/amla-pickle-exporter-vaan-vayal-enterprises.jpg';
-import Pickel4 from '../../../images/Pickle/mango-pickle-exporter-vaan-vayal-enterprises.jpg';
-import Pickel5 from '../../../images/Pickle/citron-pickel-exporter-vaan-vayal-enterprises.jpg';
-import Pickel6 from '../../../images/Pickle/green-chilli-pickle-exporter-vaan-vayal-enterprises.jpg';
-import Pickel7 from '../../../images/Pickle/onion-pickle-exporter-vaan-vayal-enterprises.jpg';
-import Pickel8 from '../../../images/Pickle/tomato-pickle-exporter-vaan-vayal-enterprises.jpg';
-import Pickel9 from '../../../images/Pickle/brinjal-pickle-exporter-vaan-vayal-enterprises.jpg';
-import Pickel10 from '../../../images/Pickle/cury-leaf-pickle-exporter-vaan-vayal-enterprises.jpg';
-import Pickel11 from '../../../images/Pickle/coriander-pickle-exporter-vaan-vayal-enterprises.jpg';
-import Pickel12 from '../../../images/Pickle/ginger-pickle-exporter-vaan-vayal-enterprises.jpg';
-import Pickel13 from '../../../images/Pickle/vadu-mangai-pickle-exporter-vaan-vayal-enterprises.jpg';
-
+import Aval1 from '../../../images/Aval/Arisi-Nice-Aval-Vaan-Vayal.jpg'
+import Aval2 from '../../../images/Aval/Black-Aval-Vaan-Vayal.jpg'
+import Aval3 from '../../../images/Aval/Red-Arisi-Aval-Ketti-Vaan-Vayal.jpg'
+import Aval4 from '../../../images/Aval/Red-Arisi-Aval-Nice-Vaan-Vayal.jpg'
+import Aval5 from '../../../images/Aval/Pori-Vaan-Vayal.jpg'
+import Aval6 from '../../../images/Aval/Nel-Pori-Vaan-Vayal.jpg'
 import { Container, Row, Col } from 'react-bootstrap';
-import banner from '../../../images/Pickle/pickle-banner.jpg';
-
-const PickelVarieties = [
-    { id: 1, name: "Garlic Pickle", image: Pickel1 },
-    { id: 2, name: "Lime Pickle", image: Pickel2 },
-    { id: 3, name: "Amla Pickle", image: Pickel3 },
-    { id: 4, name: "Mango Pickle", image: Pickel4 },
-    { id: 5, name: "Citron Pickle", image: Pickel5 },
-    { id: 6, name: "Green Chilli Pickle", image: Pickel6 },
-    { id: 7, name: "Onion Pickle", image: Pickel7 },
-    { id: 8, name: "Tomato Pickle", image: Pickel8 },
-    { id: 9, name: "Brinjal Pickle", image: Pickel9 },
-    { id: 10, name: "Curry Leaf Pickle", image: Pickel10 },
-    { id: 11, name: "Coriander Leaf Pickle", image: Pickel11 },
-    { id: 12, name: "Ginger Pickle", image: Pickel12 },
-    { id: 13, name: "Vadu Mangai Pickle", image: Pickel13 },
-
+import banner from '../../../images/Rice/Rice-baner.jpg';
+import '../../../Css/Style.css'
+const avalVarieties = [
+    { id: 1, name: "Arisi Nice Aval", image: Aval1 },
+    { id: 2, name: "Ketti Arisi Aval", image: Aval2 },
+    { id: 3, name: "Red Rice Ketti Aval", image: Aval3 },
+    { id: 4, name: "Red Rice Nice Aval", image: Aval4 },
+    { id: 5, name: "Pori", image: Aval5 },
+    { id: 6, name: "Nel Pori", image: Aval6 },
 ];
 
-function Pickel() {
+function AvalList() {
     return (
         <div>
             {/* Banner Section */}
@@ -57,7 +41,7 @@ function Pickel() {
                     <Row className="w-100">
                         <Col className="px-3 px-md-3 py-5">
                             <h1 className="fw-bold display-6" style={{ color: 'white', fontSize: '52px' }}>
-                                Pickle
+                                Rice
                             </h1>
                         </Col>
                     </Row>
@@ -67,11 +51,11 @@ function Pickel() {
             {/* Product Section */}
             <div className="container py-5">
                 <h2 className="text-center mb-4" style={{ fontSize: '32px', fontWeight: '700', color: '#222' }}>
-                    Authentic Taste, Worldwide Trust
+                    Wholesome aval, Trusted worldwide
                 </h2>
 
                 <div className="row">
-                    {PickelVarieties.map((item) => (
+                    {avalVarieties.map((item) => (
                         <div
                             key={item.id}
                             className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4"
@@ -90,7 +74,7 @@ function Pickel() {
                                     transition: 'transform 0.3s ease',
                                 }}
                             >
-                                <Link to={`/Pickel/${encodeURIComponent(item.name)}`}>
+                                <Link to={`/aval/${encodeURIComponent(item.name)}`}>
                                     <div style={{ position: 'relative', overflow: 'hidden' }}>
                                         <img
                                             src={item.image}
@@ -140,9 +124,9 @@ function Pickel() {
 
                                 {/* Title */}
                                 <div className="text-center" style={{ padding: '10px 10px 15px 10px' }}>
-                                    <h6 style={{ fontSize: '16px', fontWeight: 600 }}>
+                                    <h6 className="mb-2" style={{ fontSize: '16px', fontWeight: 600 }}>
                                         <Link
-                                            to={`/Pickel/${encodeURIComponent(item.name)}`}
+                                            to={`/aval/${encodeURIComponent(item.name)}`}
                                             style={{ textDecoration: 'none', color: '#222' }}
                                         >
                                             {item.name}
@@ -175,5 +159,5 @@ function Pickel() {
     );
 }
 
-export default Pickel;
-export { PickelVarieties };
+export default AvalList;
+export { avalVarieties };

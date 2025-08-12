@@ -7,8 +7,8 @@ import banner from '../../../images/Salt/Salt-banner.jpg';
 
 const SaltVarieties = [
     { id: 1, name: "Salt", image: Salt1 },
-    { id: 2, name: "Crystal Salt", image:Salt2 },
-    
+    { id: 2, name: "Crystal Salt", image: Salt2 },
+
 ];
 
 function Salt() {
@@ -54,7 +54,7 @@ function Salt() {
                             className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4"
                         >
                             <div
-                                className="product h-100"
+                                className="product h-80"
                                 style={{
                                     width: '100%',
                                     textAlign: 'center',

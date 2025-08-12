@@ -53,7 +53,7 @@ function Rava() {
       {/* Product Section */}
       <div className="container py-5">
         <h2 className="text-center mb-4" style={{ fontSize: '32px', fontWeight: '700', color: '#222' }}>
-         Quality that speaks Globally
+          Quality that speaks Globally
         </h2>
 
         <div className="row">
@@ -63,7 +63,7 @@ function Rava() {
               className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4"
             >
               <div
-                className="product h-100"
+                className="product h-80"
                 style={{
                   width: '100%',
                   textAlign: 'center',
@@ -162,4 +162,4 @@ function Rava() {
 }
 
 export default Rava;
-export {RavaVarieties };
+export { RavaVarieties };

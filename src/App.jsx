@@ -34,6 +34,8 @@ import Rava from './Pages/Products/Rava/Rava';
 import RavaSubPage from './Pages/ProductsSubPage/RavaSubPage/RavaSubPage';
 import Snacks from './Pages/Products/Snacks/Sancks';
 import SnacksSubPage from './Pages/ProductsSubPage/SnacksSubPage/SancksSubPage';
+import AvalList from './Pages/Products/Aval/Aval';
+import AvalSubPage from './Pages/ProductsSubPage/AvalSubPage/AvalSubPage';
 
 
 function App() {
@@ -58,8 +60,9 @@ function App() {
           <Route path='/jaggery' element={<JaggeryList />} />
           <Route path='/salt' element={<Salt />} />
           <Route path='/pickle' element={<Pickel />} />
-          <Route path='/rava' element={<Rava />} />
+          <Route path='/rava-soya-chunks' element={<Rava />} />
           <Route path='/snacks' element={<Snacks />} />
+          <Route path='/aval-pori' element={<AvalList />} />
 
           {/* Sub Products Page  */}
           <Route path="/rice/:name" element={<RiceSubPage />} />
@@ -73,6 +76,7 @@ function App() {
           <Route path="/pickle/:name" element={<PickelSubPage />} />
           <Route path="/rava/:name" element={<RavaSubPage />} />
           <Route path="/snacks/:name" element={<SnacksSubPage />} />
+          <Route path="/aval-pori/:name" element={<AvalSubPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
