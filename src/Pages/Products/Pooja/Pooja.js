@@ -3,6 +3,14 @@ import "../../../Css/Style.css";
 import { Col, Container, Row } from "react-bootstrap";
 import banner from '../../../images/Pooja/Banner.jpg'
 import poojaBanner from '../../../images/Pooja/Pooja-Banner-Vaan-Vayal.png'
+import durgaPooja from '../../../images/Pooja/Durga_Pooja_Kit-Vaan-Vayal.JPEG'
+import ganapathiPooja from '../../../images/Pooja/Ganapathi-Homam-Kit-Vaan-Vayal.JPEG'
+import hariddharshanPooja from '../../../images/Pooja/Haridharshan-Homam-Kit-Vaan-Vayal.JPEG'
+import navgrahaPooja from '../../../images/Pooja/Navgraha-Pooja-Kit-Vaan-Vayal.JPEG'
+import satyanarayanaPooja from '../../../images/Pooja/Satyanarayana-Pooja-Kit-Vaan-Vayal.JPEG'
+import shivaPooja from '../../../images/Pooja/Shiva-Pooja-Kit-Vaan-Vayal.JPEG'
+import sudharshanaPooja from '../../../images/Pooja/Sudharshana-Pooja-Kit-Vaan-Vayal.JPEG'
+import varalakshmiPooja from '../../../images/Pooja/Varalakshmi-Pooja-Kit-Vaan-Vayal.JPEG'
 import kalash from '../../../images/Pooja/Kalash-Vaan-Vayal.jpg'
 import bell from '../../../images/Pooja/Bell-Vaan-Vayal.jpg'
 import kunkumPlate from '../../../images/Pooja/Kumkum-Plate-Vaan-Vayal.jpg'
@@ -16,7 +24,7 @@ import sivalPaakku from '../../../images/Pooja/Sival-Paakku-Vaan-Vayal.png'
 import kopparaThenga from '../../../images/Pooja/Koppara-Thenga-Vaan-Vayal.jpg'
 import vettiVer from '../../../images/Pooja/Vetti-Ver-Vaan-Vayal.jpg'
 import vibuthi from '../../../images/Pooja/Vibuthi-Vaan-Vayal.jpg'
-import omamKit from '../../../images/Pooja/Omam-Kit-108-Vaan-Vayal.png'
+import omamKit from '../../../images/Pooja/108-Kit-Vaan-Vayal.JPEG'
 import paneerWater from '../../../images/Pooja/Paneer-Water-Vaan-Vayal.jpg'
 import sambraniPowder from '../../../images/Pooja/Sambrani-Powder-Vaan-Vayal.jpg'
 import sandhanamPowder from '../../../images/Pooja/Sandhanam-Powder-Vaan-Vayal.jpg'
@@ -37,15 +45,15 @@ import arasanKattai from '../../../images/Pooja/Arasan-Kattai-Vaan-Vayal.jpg'
 import { Link } from "react-router-dom";
 
 const specialPoojaKit = [
-  { id: 1, name: "Sudharshana Pooja Kit", image: poojaBanner },
-  { id: 2, name: "Varalakshmi Pooja Kit", image: poojaBanner },
-  { id: 3, name: "Shiva Pooja Kit", image: poojaBanner },
-  { id: 4, name: "Satyanarayana Pooja Kit", image: poojaBanner },
-  { id: 5, name: "Haridarshan Pooja Kit", image: poojaBanner },
-  { id: 6, name: "Navgraha Pooja Kit", image: poojaBanner },
-  { id: 7, name: "Ganapathi Pooja Kit", image: poojaBanner },
-  { id: 8, name: "108 Om Thiraviya", image: poojaBanner },
-  { id: 9, name: "Durga Pooja Kit", image: poojaBanner },
+  { id: 1, name: "Sudharshana Pooja Kit", image: sudharshanaPooja },
+  { id: 2, name: "Varalakshmi Pooja Kit", image: varalakshmiPooja },
+  { id: 3, name: "Shiva Pooja Kit", image: shivaPooja },
+  { id: 4, name: "Satyanarayana Pooja Kit", image: satyanarayanaPooja },
+  { id: 5, name: "Haridarshan Pooja Kit", image: hariddharshanPooja },
+  { id: 6, name: "Navgraha Pooja Kit", image: navgrahaPooja },
+  { id: 7, name: "Ganapathi Pooja Kit", image: ganapathiPooja },
+  { id: 8, name: "108 Om Thiraviya", image: omamKit },
+  { id: 9, name: "Durga Pooja Kit", image: durgaPooja },
 ];
 
 const brassPoojaProducts = [
