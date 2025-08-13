@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { PickelVarieties } from '../../Products/Pickels/Pickels';
-import Pickel from '../../Products/Pickels/Pickels';
 
 function PickelSubPage() {
     const { name } = useParams();
