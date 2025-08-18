@@ -36,6 +36,10 @@ import Snacks from './Pages/Products/Snacks/Sancks';
 import SnacksSubPage from './Pages/ProductsSubPage/SnacksSubPage/SancksSubPage';
 import AvalList from './Pages/Products/Aval/Aval';
 import AvalSubPage from './Pages/ProductsSubPage/AvalSubPage/AvalSubPage';
+import Oil from './Pages/Products/Oil/Oil';
+import RicePaste from './Pages/Products/RicePaste/RicePaste';
+import OilSubPage from './Pages/ProductsSubPage/OilSubPage/OilSubPage';
+import RicePasteSubPage from './Pages/ProductsSubPage/RicePasteSubPage/RicePasteSubPage';
 
 
 function App() {
@@ -63,6 +67,8 @@ function App() {
           <Route path='/rava-soya-chunks' element={<Rava />} />
           <Route path='/snacks' element={<Snacks />} />
           <Route path='/aval-pori' element={<AvalList />} />
+          <Route path='/oil' element={<Oil />} />
+          <Route path='/rice-paste' element={<RicePaste />} />
 
           {/* Sub Products Page  */}
           <Route path="/rice/:name" element={<RiceSubPage />} />
@@ -77,6 +83,8 @@ function App() {
           <Route path="/rava/:name" element={<RavaSubPage />} />
           <Route path="/snacks/:name" element={<SnacksSubPage />} />
           <Route path="/aval-pori/:name" element={<AvalSubPage />} />
+          <Route path="/oil/:name" element={<OilSubPage />} />
+          <Route path="/rice-paste/:name" element={<RicePasteSubPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -7,7 +7,7 @@ import Aval4 from '../../../images/Aval/Red-Arisi-Aval-Nice-Vaan-Vayal.jpg'
 import Aval5 from '../../../images/Aval/Pori-Vaan-Vayal.jpg'
 import Aval6 from '../../../images/Aval/Nel-Pori-Vaan-Vayal.jpg'
 import { Container, Row, Col } from 'react-bootstrap';
-import banner from '../../../images/Rice/Rice-baner.jpg';
+import banner from '../../../images/Aval/Aval-Banner-Vaan-Vayal.jpg';
 import '../../../Css/Style.css'
 const avalVarieties = [
     { id: 1, name: "Arisi Nice Aval", image: Aval1 },
@@ -41,7 +41,7 @@ function AvalList() {
                     <Row className="w-100">
                         <Col className="px-3 px-md-3 py-5">
                             <h1 className="fw-bold display-6" style={{ color: 'white', fontSize: '52px' }}>
-                                Rice
+                                Aval and Pori
                             </h1>
                         </Col>
                     </Row>

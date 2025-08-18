@@ -1,9 +1,74 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TextField, Button, Typography, Box, Grid, Card, CardContent, Divider } from '@mui/material';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Swal from "sweetalert2";
+import CircularDottedLoader from '../CircularDotterLoader/CircularDottedLoader';
 const Contact = () => {
+
+  const [loading, setLoading] = useState(false);
+
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    message: ''
+  });
+
+  const handleSubmit = async (e) => {
+    debugger
+    e.preventDefault();
+    try {
+      setLoading(true);
+      const dataToSend = {
+        ...formData,
+      };
+
+      const res = await fetch("https://vaan-vayal-server.onrender.com/send-contact-mail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(dataToSend),
+      });
+
+      const data = await res.json();
+      console.log("Data:", data);
+
+      if (res.ok) {
+        Swal.fire({
+          icon: "success",
+          title: "Your enquiry has been sent successfully!",
+          text: "Our team will contact you shortly.",
+          confirmButtonColor: "#198754",
+        });
+
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: ""
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Failed to send enquiry",
+          text: data.message || "Please try again later.",
+          confirmButtonColor: "#dc3545",
+        });
+      }
+    } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Unable to send your enquiry",
+        text: "Something went wrong. Please try again later.",
+        confirmButtonColor: "#dc3545",
+      });
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -67,36 +132,41 @@ const Contact = () => {
         </div>
 
         <Grid container spacing={4} alignItems="stretch" justifyContent="center">
-          <Grid item xs={12} md={6}>
-            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderRadius: 2, borderColor: '#e0e0e0' }}>
-              <CardContent>
-                <Typography data-aos="fade-up" variant="h6" gutterBottom>
-                  Get in Touch
-                </Typography>
-                <Divider sx={{ mb: 2 }} />
-                <Box data-aos="fade-up" component="form" noValidate autoComplete="off">
-                  <div className="row mb-3">
-                    <div className="col">
-                      <TextField label="Name" fullWidth variant="outlined" />
+          {loading ? (
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "200px" }}>
+              <CircularDottedLoader />
+            </div>
+          ) : (
+            <Grid item xs={12} md={6}>
+              <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderRadius: 2, borderColor: '#e0e0e0' }}>
+                <CardContent>
+                  <Typography data-aos="fade-up" variant="h6" gutterBottom>
+                    Get in Touch
+                  </Typography>
+                  <Divider sx={{ mb: 2 }} />
+                  <Box data-aos="fade-up" component="form" noValidate autoComplete="off">
+                    <div className="row mb-3">
+                      <div className="col">
+                        <TextField label="Name" fullWidth variant="outlined" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
+                      </div>
+                      <div className="col">
+                        <TextField label="Phone Number" fullWidth variant="outlined" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} />
+                      </div>
                     </div>
-                    <div className="col">
-                      <TextField label="Phone Number" fullWidth variant="outlined" />
+                    <div className="mb-3">
+                      <TextField label="Email" type="email" fullWidth variant="outlined" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                     </div>
-                  </div>
-                  <div className="mb-3">
-                    <TextField label="Email" type="email" fullWidth variant="outlined" />
-                  </div>
-                  <div className="mb-3">
-                    <TextField label="Your Message" multiline rows={4} fullWidth variant="outlined" />
-                  </div>
-                  <Button data-aos="fade-up" variant="contained" sx={{ backgroundColor: "#198754", color: "white" }}>
-                    Send Message
-                  </Button>
-                </Box>
-              </CardContent>
-            </Card>
-          </Grid>
-
+                    <div className="mb-3">
+                      <TextField label="Your Message" multiline rows={4} fullWidth variant="outlined" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} />
+                    </div>
+                    <Button data-aos="fade-up" variant="contained" sx={{ backgroundColor: "#198754", color: "white" }} onClick={handleSubmit}>
+                      Send Message
+                    </Button>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+          )}
           <Grid item xs={12} md={6} sx={{ width: "50%" }}>
             <Card variant="outlined" sx={{ borderRadius: 2, height: '100%' }}>
               <CardContent>

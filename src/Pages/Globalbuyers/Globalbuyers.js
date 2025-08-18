@@ -17,6 +17,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { IoSend } from "react-icons/io5";
 import { useEffect } from "react";
+import CircularDottedLoader from '../CircularDotterLoader/CircularDottedLoader';
+import Swal from 'sweetalert2';
 
 const style = {
   position: 'absolute',
@@ -37,12 +39,65 @@ const Globalbuyers = () => {
 
   const [open, setOpen] = useState(false);
   const [image, setImage] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleOpen = (image) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    type: '',
+    comments: ''
+  });
+
+  const handleOpen = (image, countryName) => {
     setOpen(true)
     setImage(image)
+    setSelectedCountry(countryName);
   };
   const handleClose = () => setOpen(false);
+
+  const handleSubmit = async () => {
+    try {
+      setLoading(true);
+      const dataToSend = {
+        ...formData,
+        country: selectedCountry
+      };
+
+      const res = await fetch("https://vaan-vayal-server.onrender.com/send-mail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(dataToSend),
+      });
+
+      const data = await res.json();
+      console.log("Data", data);
+      Swal.fire({
+        icon: "success",
+        title: "Your enquiry has been sent successfully! Our team will contact you shortly.",
+        confirmButtonColor: "#198754",
+      });
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        type: '',
+        comments: ''
+      });
+      setSelectedCountry("");
+      handleClose();
+    } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Unable to send your enquiry. Please try again later.",
+        confirmButtonColor: "#dc3545",
+      });
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
     AOS.init({
@@ -90,7 +145,6 @@ const Globalbuyers = () => {
           >
             Our Journey with International Buyers
           </h2>
-
           <Row data-aos="fade-up" className="g-4 justify-content-center">
             {[
               { name: 'Australia', image: country1 },
@@ -115,7 +169,7 @@ const Globalbuyers = () => {
                         />
                       </div>
                       <Card.Title className="fw-bold">{cat.name}</Card.Title>
-                      <Button className='btn btn-0 btn-success w-100' style={{ borderRadius: 0 }} onClick={() => handleOpen(cat.image)}> <IoSend style={{ marginRight: "8px", marginTop: "-2px", alignItems: 'center' }} /> Enquire for Import</Button>
+                      <Button className='btn btn-0 btn-success w-100' style={{ borderRadius: 0 }} onClick={() => handleOpen(cat.image, cat.name)}> <IoSend style={{ marginRight: "8px", marginTop: "-2px", alignItems: 'center' }} /> Enquire for Import</Button>
                     </Card.Body>
                   </Card>
                 </Link>
@@ -125,69 +179,78 @@ const Globalbuyers = () => {
         </Container>
         <Modal open={open} onClose={handleClose}>
           <Box sx={style}>
-            <Grid container spacing={4}>
-              <Grid item size={{ xs: 12, sm: 12, md: 6 }}>
-                <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
-                  VAAN VAYAL BRAND
-                </Typography>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                  <img
-                    src={image}
-                    alt="Vaan Vayal"
-                    style={{ maxWidth: '275px', height: 'auto', marginTop: '50px' }}
+            {loading ? (
+              <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "200px" }}>
+                <CircularDottedLoader />
+              </div>
+            ) : (
+              <Grid container spacing={4}>
+                <Grid item size={{ xs: 12, sm: 12, md: 6 }}>
+                  <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
+                    VAAN VAYAL BRAND
+                  </Typography>
+                  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <img
+                      src={image}
+                      alt="Vaan Vayal"
+                      style={{ maxWidth: '275px', height: 'auto', marginTop: '50px' }}
+                    />
+                  </div>
+                  <IconButton
+                    aria-label="close"
+                    onClick={handleClose}
+                    sx={(theme) => ({
+                      position: 'absolute',
+                      right: 8,
+                      top: 8,
+                      color: theme.palette.grey[500],
+                    })}
+                  >
+                    <CloseIcon />
+                  </IconButton>
+                </Grid>
+                <Grid item size={{ xs: 12, sm: 12, md: 6 }}>
+                  <TextField label="Name" variant="outlined" fullWidth value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} margin="normal" />
+                  <TextField label="Email" variant="outlined" fullWidth value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} margin="normal" />
+                  <TextField label="Phone Number" variant="outlined" fullWidth value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} margin="normal" />
+
+                  <TextField
+                    label="I like to Enquire for"
+                    variant="outlined"
+                    select
+                    fullWidth
+                    margin="normal"
+                    value={formData.type} onChange={(e) => setFormData({ ...formData, type: e.target.value })}
+                  >
+                    <MenuItem value="Importer">Importer</MenuItem>
+                    <MenuItem value="Wholesaler">Wholesaler</MenuItem>
+                    <MenuItem value="Distributor">Distributor</MenuItem>
+                    <MenuItem value="Retailer">Retailer</MenuItem>
+                  </TextField>
+
+                  <TextField
+                    label="Comments"
+                    variant="outlined"
+                    fullWidth
+                    multiline
+                    value={formData.comments}
+                    onChange={(e) => setFormData({ ...formData, comments: e.target.value })}
+                    rows={3}
+                    margin="normal"
                   />
-                </div>
-                <IconButton
-                  aria-label="close"
-                  onClick={handleClose}
-                  sx={(theme) => ({
-                    position: 'absolute',
-                    right: 8,
-                    top: 8,
-                    color: theme.palette.grey[500],
-                  })}
-                >
-                  <CloseIcon />
-                </IconButton>
+
+                  <Button
+                    variant="contained"
+                    fullWidth
+                    className='btn btn-0 btn-success w-50 mt-2'
+                    style={{ borderRadius: 0 }}
+                    onClick={handleSubmit}
+                  >
+                    SUBMIT
+                  </Button>
+                </Grid>
               </Grid>
-
-              <Grid item size={{ xs: 12, sm: 12, md: 6 }}>
-                <TextField label="Name" variant="outlined" fullWidth margin="normal" />
-                <TextField label="Email" variant="outlined" fullWidth margin="normal" />
-                <TextField label="Phone Number" variant="outlined" fullWidth margin="normal" />
-
-                <TextField
-                  label="I like to Enquire for"
-                  variant="outlined"
-                  select
-                  fullWidth
-                  margin="normal"
-                >
-                  <MenuItem value="Importer">Importer</MenuItem>
-                  <MenuItem value="Wholesaler">Wholesaler</MenuItem>
-                  <MenuItem value="Distributor">Distributor</MenuItem>
-                  <MenuItem value="Retailer">Retailer</MenuItem>
-                </TextField>
-
-                <TextField
-                  label="Comments"
-                  variant="outlined"
-                  fullWidth
-                  multiline
-                  rows={3}
-                  margin="normal"
-                />
-
-                <Button
-                  variant="contained"
-                  fullWidth
-                  className='btn btn-0 btn-success w-50 mt-2'
-                  style={{ borderRadius: 0 }}
-                >
-                  SUBMIT
-                </Button>
-              </Grid>
-            </Grid>
+            )}
           </Box>
         </Modal>
       </section>
@@ -196,6 +259,3 @@ const Globalbuyers = () => {
 }
 
 export default Globalbuyers;
-
-
-

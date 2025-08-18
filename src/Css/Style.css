@@ -225,6 +225,18 @@ p:last-child {
     height: 120px;
 }
 
+.dotted-spinner {
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .spices-banner {
     background-color: #f7f7f7;
     overflow: hidden;

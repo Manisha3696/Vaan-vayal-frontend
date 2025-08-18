@@ -40,7 +40,7 @@ function Header() {
                                 <li><Link className="dropdown-item" to="/rice-paste">Rice Paste</Link></li>
                                 <li><Link className="dropdown-item" to="/rava-soya-chunks">Rava & Soya Chunks</Link></li>
                                 <li><Link className="dropdown-item" to="/snacks">Snacks</Link></li>
-                                <li><Link className="dropdown-item" to="/flower">Flower</Link></li>
+                                {/* <li><Link className="dropdown-item" to="/flower">Flower</Link></li> */}
                                 <li><Link className="dropdown-item" to="/pooja-products">Pooja Products</Link></li>
 
                             </ul>
