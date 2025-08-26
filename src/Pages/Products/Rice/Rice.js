@@ -11,13 +11,16 @@ import { Container, Row, Col } from 'react-bootstrap';
 import banner from '../../../images/Rice/Rice-baner.jpg';
 import '../../../Css/Style.css'
 const riceVarieties = [
-  { id: 1, name: "Boiled Rice", image: Rice1 },
-  { id: 2, name: "White Raw Rice", image: Rice2 },
-  { id: 3, name: "Red Raw Rice", image: Rice3 },
-  { id: 4, name: "Basmati Rice", image: Rice4 },
-  { id: 5, name: "Seeraga Samba Rice", image: Rice5 },
-  { id: 6, name: "Matta Rice", image: Rice6 },
-  { id: 7, name: "Idli Rice", image: Rice7 },
+  {
+    id: 1, name: "Boiled Rice", image: Rice1, title: "Premium Boilded Rice Exporters", 
+    description: `lorem150`
+  },
+  { id: 2, name: "White Raw Rice", image: Rice2, title: "Premium White Raw Rice Exporters", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` },
+  { id: 3, name: "Red Raw Rice", image: Rice3, title: "Premium Red Raw Rice Exporters", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` },
+  { id: 4, name: "Basmati Rice", image: Rice4, title: "Premium Basmati Rice Exporters", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` },
+  { id: 5, name: "Seeraga Samba Rice", image: Rice5, title: "Premium Seeraga Samba Rice Exporters", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` },
+  { id: 6, name: "Matta Rice", image: Rice6, title: "Premium Matta Rice Exporters", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` },
+  { id: 7, name: "Idli Rice", image: Rice7, title: "Premium Idli Rice Exporters", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` },
 ];
 
 function RiceList() {
