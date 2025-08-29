@@ -6,9 +6,20 @@ import { Container, Row, Col } from 'react-bootstrap';
 import banner from '../../../images/Salt/Salt-banner.jpg';
 
 const SaltVarieties = [
-    { id: 1, name: "Salt", image: Salt1 },
-    { id: 2, name: "Crystal Salt", image: Salt2 },
-
+    {
+        id: 1,
+        name: "Salt",
+        image: Salt1,
+        title: "Salt",
+        description: "Salt, a premium table salt, is a kitchen essential for enhancing flavors in everyday cooking. Finely ground for easy blending, it’s perfect for seasoning curries, soups, or snacks. Sourced from high-quality sources, this salt ensures purity and consistent taste, making it ideal for both savory and sweet dishes. Its fine texture dissolves quickly, ensuring even flavor distribution in stir-fries, marinades, or baked goods. A versatile pantry staple, it suits Indian and global cuisines, from dal to salads. Enjoy its clean, natural taste in daily meals or festive recipes, delivering reliable quality and essential flavor to every dish with ease and precision."
+    },
+    {
+        id: 2,
+        name: "Crystal Salt",
+        image: Salt2,
+        title: "Crystal Salt",
+        description: "Crystal Salt, sourced from natural rock salt deposits, offers a pure, unrefined flavor with a coarse texture for authentic cooking. Perfect for seasoning curries, chutneys, or pickling, its mineral-rich profile enhances traditional Indian dishes. Sourced from premium mines, this salt ensures quality and a distinct taste. Ideal for grinding into powder or using whole in slow-cooked recipes, it adds depth to dals, soups, or snacks. A pantry essential, Crystal Salt suits both rustic and modern cuisines, delivering natural flavor. Enjoy its crunchy texture and wholesome taste in daily meals or festive preparations, providing authentic quality to every dish with ease."
+    },
 ];
 
 function Salt() {

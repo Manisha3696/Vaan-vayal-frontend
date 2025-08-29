@@ -10,17 +10,57 @@ import Rice7 from '../../../images/Rice/Idli-Rice.jpg';
 import { Container, Row, Col } from 'react-bootstrap';
 import banner from '../../../images/Rice/Rice-baner.jpg';
 import '../../../Css/Style.css'
+
 const riceVarieties = [
   {
-    id: 1, name: "Boiled Rice", image: Rice1, title: "Premium Boilded Rice Exporters", 
-    description: `lorem150`
+    id: 1,
+    name: "Boiled Rice",
+    image: Rice1,
+    title: "Premium Boiled Rice",
+    description: "Our premium boiled rice is partially pre-cooked for quick and easy preparation, delivering a soft, tender texture and mild flavor that complements a wide range of dishes. Ideal for everyday meals, this versatile rice pairs perfectly with curries, stir-fries, and stews. Its consistent quality ensures fluffy, non-sticky grains every time, making it a staple for busy households. Sourced from trusted farms, this rice offers reliable performance in the kitchen, whether you're preparing a quick weeknight dinner or a hearty family meal. Enjoy the convenience and subtle taste that makes boiled rice a go-to choice for all your culinary needs, from simple sides to flavorful main dishes."
   },
-  { id: 2, name: "White Raw Rice", image: Rice2, title: "Premium White Raw Rice Exporters", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` },
-  { id: 3, name: "Red Raw Rice", image: Rice3, title: "Premium Red Raw Rice Exporters", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` },
-  { id: 4, name: "Basmati Rice", image: Rice4, title: "Premium Basmati Rice Exporters", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` },
-  { id: 5, name: "Seeraga Samba Rice", image: Rice5, title: "Premium Seeraga Samba Rice Exporters", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` },
-  { id: 6, name: "Matta Rice", image: Rice6, title: "Premium Matta Rice Exporters", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` },
-  { id: 7, name: "Idli Rice", image: Rice7, title: "Premium Idli Rice Exporters", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` },
+  {
+    id: 2,
+    name: "White Raw Rice",
+    image: Rice2,
+    title: "Premium White Raw Rice",
+    description: "Premium white raw rice, polished to perfection, offers a fluffy, non-sticky texture ideal for a variety of dishes. Perfect for biryanis, pulaos, or simple steamed rice, its neutral flavor complements bold spices and delicate broths alike. Sourced from high-quality crops, this rice cooks evenly, ensuring consistent results for both novice and experienced cooks. Its versatility makes it a pantry essential, suitable for everything from everyday meals to festive feasts. Whether paired with rich curries or light vegetable stir-fries, this white raw rice delivers a satisfying texture and clean taste, enhancing any dish with its reliable quality and ease of preparation."
+  },
+  {
+    id: 3,
+    name: "Red Raw Rice",
+    image: Rice3,
+    title: "Premium Red Raw Rice",
+    description: "Nutritious red raw rice brings a nutty flavor and chewy texture to your plate, packed with fiber and antioxidants for a wholesome meal choice. Its vibrant reddish hue adds visual appeal to traditional and modern dishes alike. Perfect for health-conscious eaters, this rice shines in salads, stir-fries, and South Indian recipes. Sourced from premium fields, it retains its natural bran layer, offering enhanced nutrition. Its robust flavor pairs well with bold spices and hearty ingredients, making it ideal for flavorful curries or grain bowls. Easy to cook, this rice provides a satisfying, wholesome addition to any diet, blending taste and health effortlessly."
+  },
+  {
+    id: 4,
+    name: "Basmati Rice",
+    image: Rice4,
+    title: "Premium Basmati Rice",
+    description: "Aromatic long-grain basmati rice, renowned for its delicate fragrance and fluffy texture, elevates any meal to a special occasion. Ideal for biryanis, pulaos, and pilafs, its slender grains remain separate and light when cooked, perfect for soaking up rich flavors. Sourced from the finest regions, this premium rice offers consistent quality for both everyday and festive dishes. Its subtle nutty taste complements spicy curries, grilled meats, or creamy sauces, making it a versatile choice. Easy to prepare, basmati rice brings elegance to your table, whether you're hosting a dinner party or enjoying a quiet meal at home, delivering unmatched aroma and texture every time."
+  },
+  {
+    id: 5,
+    name: "Seeraga Samba Rice",
+    image: Rice5,
+    title: "Premium Seeraga Samba Rice",
+    description: "Fragrant Seeraga Samba rice, a South Indian treasure, boasts small grains with a distinctive aroma and fluffy texture. Perfect for biryanis and pulaos, its unique flavor enhances rich, spiced dishes, making it a favorite for traditional recipes. Sourced from premium crops, this rice absorbs flavors beautifully while retaining its light, non-sticky quality. Ideal for festive meals or everyday cooking, it pairs wonderfully with curries, dals, or grilled vegetables. Its quick-cooking nature and delicate taste make it a must-have for authentic South Indian cuisine, bringing a touch of heritage to your kitchen with every perfectly cooked grain, offering both ease and exceptional flavor."
+  },
+  {
+    id: 6,
+    name: "Matta Rice",
+    image: Rice6,
+    title: "Premium Matta Rice",
+    description: "Robust Matta rice, a Kerala favorite, features a reddish hue and earthy flavor, rich in fiber for wholesome meals. Its chewy texture makes it perfect for traditional South Indian dishes like rice porridge or paired with spicy curries. Sourced from trusted farms, this rice retains its natural bran, offering enhanced nutrition and a hearty bite. Ideal for health-conscious cooks, it complements bold flavors and thick gravies, adding depth to every dish. Easy to prepare, Matta rice is a versatile staple for everyday meals or special occasions, bringing authentic regional taste and satisfying texture to your table with its unique character and nutritional benefits."
+  },
+  {
+    id: 7,
+    name: "Idli Rice",
+    image: Rice7,
+    title: "Premium Idli Rice",
+    description: "Premium idli rice is specially selected for crafting soft, fluffy idlis and crispy dosas, a cornerstone of South Indian cuisine. This short-grain rice ensures perfect fermentation, yielding a smooth, airy batter for authentic results. Sourced from high-quality crops, it delivers consistent texture and taste, making it ideal for breakfast staples or snacks. Its versatility extends to other steamed dishes, offering a neutral flavor that pairs well with chutneys and sambar. Easy to soak and grind, this rice is a must-have for home cooks aiming to recreate traditional South Indian flavors, bringing restaurant-quality idlis and dosas to your kitchen with ease and precision."
+  },
 ];
 
 function RiceList() {

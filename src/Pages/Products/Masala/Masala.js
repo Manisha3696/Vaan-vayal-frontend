@@ -10,13 +10,48 @@ import { Container, Row, Col } from 'react-bootstrap';
 import banner from '../../../images/Masala/masala-banner-exporter-vaan-vayal-enterprises.jpg';
 
 const MasalaVarieties = [
-  { id: 1, name: "rasam Masala", image: masala1 },
-  { id: 2, name: "Garam Masala", image: masala2 },
-  { id: 3, name: "Sambar Powder ", image: masala3 },
-  { id: 4, name: "Puli Kolambu Masala ", image: masala4 },
-  { id: 5, name: "Chicken Masala ", image: masala5 },
-  { id: 6, name: "Fish Masala ", image: masala6 },
-
+  {
+    id: 1,
+    name: "Rasam Masala",
+    image: masala1,
+    title: "Rasam Masala",
+    description: "Rasam Masala, a vibrant South Indian spice blend, delivers a tangy, peppery kick for authentic rasam. Crafted from premium coriander, cumin, and black pepper, it enhances soups and lentil dishes with its aromatic warmth. Perfect for quick rasam or as a seasoning for vegetables, this mix ensures bold flavor in every spoonful. Sourced from trusted spice growers, it offers consistent quality for home cooks. Ideal for daily meals or festive menus, Rasam Masala pairs well with tamarind and tomatoes, creating a comforting, spicy broth. A pantry essential, it brings South Indian tradition to your kitchen, offering versatile, zesty flavor for soups, stews, or creative dishes."
+  },
+  {
+    id: 2,
+    name: "Garam Masala",
+    image: masala2,
+    title: "Garam Masala",
+    description: "Garam Masala, a rich North Indian spice blend, adds warm, aromatic depth to curries, biryanis, and gravies. Made from premium spices like cardamom, cinnamon, and cloves, it delivers a balanced, bold flavor. Perfect for meats, vegetables, or lentils, this versatile mix elevates both everyday and festive dishes. Sourced from high-quality spice farms, it ensures consistent taste and aroma. Ideal for enhancing stir-fries, rice, or marinades, Garam Masala is a pantry staple for authentic Indian cuisine. Its robust, fragrant profile transforms simple ingredients into flavorful meals. Enjoy its versatility and rich taste in traditional or modern recipes with ease."
+  },
+  {
+    id: 3,
+    name: "Sambar Powder",
+    image: masala3,
+    title: "Sambar Powder",
+    description: "Sambar Powder, a South Indian essential, brings bold, tangy flavor to sambar, a lentil-based vegetable stew. Crafted from premium coriander, chana dal, and red chilies, it offers a perfect balance of spice and aroma. Ideal for daily meals or festive feasts, this mix enhances sambar, rasam, or vegetable curries. Sourced from trusted spice growers, it ensures consistent quality and authentic taste. Easy to use, it pairs well with tamarind, lentils, and fresh vegetables, creating a hearty dish. A pantry must-have, Sambar Powder delivers South Indian tradition to your kitchen, offering versatile flavor for stews, soups, or creative recipes with its rich, spicy profile."
+  },
+  {
+    id: 4,
+    name: "Puli Kulambu Masala",
+    image: masala4,
+    title: "Puli Kulambu Masala",
+    description: "Puli Kulambu Masala, a South Indian spice blend, delivers a tangy, spicy kick for authentic tamarind-based curries. Made from premium coriander, fenugreek, and red chilies, it enhances puli kulambu with its bold, aromatic flavor. Perfect for vegetable or meat-based gravies, this mix is ideal for daily meals or special occasions. Sourced from high-quality spices, it ensures consistent taste and easy preparation. Pair it with tamarind, garlic, or shallots for a rich, tangy dish. A pantry essential, Puli Kulambu Masala brings South Indian tradition to your kitchen, offering versatile, zesty flavor for curries, stews, or creative recipes with its distinctive, robust profile."
+  },
+  {
+    id: 5,
+    name: "Chicken Masala",
+    image: masala5,
+    title: "Chicken Masala",
+    description: "Chicken Masala, a robust Indian spice blend, adds fiery, aromatic depth to chicken curries, grills, and stir-fries. Crafted from premium spices like coriander, cumin, and turmeric, it delivers bold flavor and rich aroma. Perfect for both everyday meals and festive dishes, this mix ensures juicy, flavorful chicken every time. Sourced from trusted spice farms, it offers consistent quality for home cooks. Ideal for marinades, gravies, or tandoori dishes, Chicken Masala pairs well with onions, tomatoes, or yogurt. A pantry staple, it brings authentic Indian taste to your kitchen, offering versatile, spicy flavor for traditional or modern recipes with ease and reliability."
+  },
+  {
+    id: 6,
+    name: "Fish Masala",
+    image: masala6,
+    title: "Fish Masala",
+    description: "Fish Masala, a vibrant South Indian spice blend, delivers a spicy, tangy flavor for authentic fish curries and fries. Made from premium red chilies, coriander, and turmeric, it enhances seafood with its bold, aromatic profile. Perfect for coastal-style dishes or grilled fish, this mix ensures rich taste in every bite. Sourced from high-quality spices, it offers consistent quality and easy use. Ideal for curries, marinades, or fried fish, Fish Masala pairs well with tamarind, coconut, or onions. A pantry essential, it brings South Indian tradition to your kitchen, offering versatile, zesty flavor for seafood dishes or creative recipes with its distinctive, robust taste."
+  },
 ];
 
 function Masala() {

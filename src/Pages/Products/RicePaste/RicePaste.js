@@ -13,14 +13,62 @@ import banner from '../../../images/Rice paste/Rice-Paste-Banner-Vaan-Vayal.jpg'
 import '../../../Css/Style.css'
 
 const ricePasteVarieties = [
-    { id: 1, name: "Vathal Kolambu Paste", image: paste1 },
-    { id: 2, name: "Kara Kolambu Paste", image: paste2 },
-    { id: 3, name: "Milagu Kolambu Paste", image: paste3 },
-    { id: 4, name: "Pudhina Rice Paste", image: paste4 },
-    { id: 5, name: "Gongura leaf rice Paste", image: paste5 },
-    { id: 6, name: "Curry Leaf Rice Paste", image: paste6 },
-    { id: 7, name: "Tomato Rice Paste", image: paste7 },
-    { id: 8, name: "Pepper Rice Paste", image: paste8 },
+    {
+        id: 1,
+        name: "Vathal Kolambu Paste",
+        image: paste1,
+        title: "Vathal Kolambu Paste",
+        description: "Vathal Kolambu Paste, a tangy South Indian blend, simplifies authentic tamarind-based curry preparation with dried vegetables. Perfect for quick rice dishes or side gravies, its bold, spicy flavor enhances meals. Made from premium spices and tamarind, it ensures rich taste and consistency. Ideal for busy kitchens or festive menus, it pairs well with steamed rice or dosas. A pantry essential, this paste delivers traditional South Indian zest with minimal effort. Enjoy its vibrant, tangy profile in curries or as a flavor base for veggies. Sourced for quality, Vathal Kolambu Paste brings authentic taste and convenience to every meal, perfect for home cooks."
+    },
+    {
+        id: 2,
+        name: "Kara Kolambu Paste",
+        image: paste2,
+        title: "Kara Kolambu Paste",
+        description: "Kara Kolambu Paste, a fiery South Indian mix, delivers a spicy, tangy flavor for authentic kara kulambu curry. Perfect for rice or as a side, its bold blend of tamarind and spices simplifies cooking. Sourced from premium ingredients, this paste ensures consistent taste and aroma. Ideal for daily meals or festive spreads, it pairs well with vegetables or meat. A pantry staple, Kara Kolambu Paste brings South Indian tradition to your kitchen with ease. Enjoy its zesty, robust profile in curries or gravies, adding depth to every dish. Its quality and convenience make it a must-have for home cooks seeking authentic, spicy flavors."
+    },
+    {
+        id: 3,
+        name: "Milagu Kolambu Paste",
+        image: paste3,
+        title: "Milagu Kolambu Paste",
+        description: "Milagu Kolambu Paste, a peppery South Indian blend, offers a warm, spicy kick for authentic milagu kulambu. Perfect for rice or as a health-focused side, its black pepper and tamarind base aids digestion. Sourced from premium spices, this paste ensures rich flavor and consistent quality. Ideal for daily meals or winter menus, it pairs well with steamed rice or lentils. A pantry essential, Milagu Kolambu Paste simplifies traditional cooking with bold taste. Enjoy its fiery, aromatic profile in curries or gravies, enhancing every dish. Its quality and convenience make it a must-have for home cooks craving South Indian authenticity and wellness."
+    },
+    {
+        id: 4,
+        name: "Pudhina Rice Paste",
+        image: paste4,
+        title: "Pudhina Rice Paste",
+        description: "Pudhina Rice Paste, a refreshing South Indian mix, infuses minty freshness into flavorful rice dishes. Perfect for quick pulao or biryani, its vibrant blend of mint and spices elevates meals. Sourced from premium ingredients, this paste ensures consistent aroma and taste. Ideal for everyday cooking or festive menus, it pairs well with vegetables or curd. A pantry staple, Pudhina Rice Paste brings South Indian flair with minimal effort. Enjoy its cool, herbaceous profile in rice dishes or as a marinade, adding zest to every bite. Its quality and convenience make it a must-have for home cooks seeking authentic, refreshing flavors in their culinary creations."
+    },
+    {
+        id: 5,
+        name: "Gongura Leaf Rice Paste",
+        image: paste5,
+        title: "Gongura Leaf Rice Paste",
+        description: "Gongura Leaf Rice Paste, a tangy South Indian blend, brings the unique, tart flavor of gongura leaves to rice dishes. Perfect for quick pulao or as a side, its bold taste elevates meals with authenticity. Sourced from fresh gongura and premium spices, this paste ensures vibrant flavor and consistency. Ideal for daily cooking or festive spreads, it pairs well with rice or flatbreads. A pantry essential, Gongura Leaf Rice Paste simplifies traditional recipes with ease. Enjoy its zesty, earthy profile in rice mixes or curries, adding depth to every dish. Its quality and convenience make it a must-have for home cooks craving South Indian heritage."
+    },
+    {
+        id: 6,
+        name: "Curry Leaf Rice Paste",
+        image: paste6,
+        title: "Curry Leaf Rice Paste",
+        description: "Curry Leaf Rice Paste, a fragrant South Indian blend, infuses the earthy aroma of curry leaves into rice dishes. Perfect for quick pulao or variety rice, its bold flavor enhances everyday meals. Sourced from fresh curry leaves and premium spices, this paste ensures consistent taste and aroma. Ideal for daily cooking or festive menus, it pairs well with vegetables or lentils. A pantry staple, Curry Leaf Rice Paste simplifies authentic recipes with ease. Enjoy its aromatic, savory profile in rice dishes or as a seasoning, adding depth to every bite. Its quality and convenience make it a must-have for home cooks seeking traditional South Indian flavors."
+    },
+    {
+        id: 7,
+        name: "Tomato Rice Paste",
+        image: paste7,
+        title: "Tomato Rice Paste",
+        description: "Tomato Rice Paste, a vibrant South Indian blend, delivers a tangy, spicy flavor for quick tomato rice or pulao. Perfect for busy kitchens, its rich tomato and spice mix elevates meals with ease. Sourced from premium ingredients, this paste ensures consistent taste and vivid color. Ideal for daily meals or lunchbox recipes, it pairs well with vegetables or curd. A pantry essential, Tomato Rice Paste simplifies authentic cooking with bold flavor. Enjoy its zesty, savory profile in rice dishes or as a base for gravies, adding richness to every bite. Its quality and convenience make it a must-have for home cooks craving South Indian taste."
+    },
+    {
+        id: 8,
+        name: "Pepper Rice Paste",
+        image: paste8,
+        title: "Pepper Rice Paste",
+        description: "Pepper Rice Paste, a spicy South Indian blend, brings a fiery, peppery kick to rice dishes or variety rice. Perfect for quick pulao or health-focused meals, its bold flavor aids digestion. Sourced from premium black pepper and spices, this paste ensures rich taste and consistency. Ideal for daily cooking or winter menus, it pairs well with rice or flatbreads. A pantry staple, Pepper Rice Paste simplifies authentic recipes with vibrant flavor. Enjoy its warm, spicy profile in rice mixes or as a seasoning, adding depth to every dish. Its quality and convenience make it a must-have for home cooks seeking South Indian zest and wellness."
+    },
 ];
 
 function RicePaste() {

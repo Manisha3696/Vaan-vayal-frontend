@@ -10,12 +10,48 @@ import { Container, Row, Col } from 'react-bootstrap';
 import banner from '../../../images/Aval/Aval-Banner-Vaan-Vayal.jpg';
 import '../../../Css/Style.css'
 const avalVarieties = [
-    { id: 1, name: "Arisi Nice Aval", image: Aval1 },
-    { id: 2, name: "Ketti Arisi Aval", image: Aval2 },
-    { id: 3, name: "Red Rice Ketti Aval", image: Aval3 },
-    { id: 4, name: "Red Rice Nice Aval", image: Aval4 },
-    { id: 5, name: "Pori", image: Aval5 },
-    { id: 6, name: "Nel Pori", image: Aval6 },
+    {
+        id: 1,
+        name: "Arisi Nice Aval",
+        image: Aval1,
+        title: "Arisi Nice Aval",
+        description: "Arisi Nice Aval, made from finely processed rice, offers a soft, delicate texture perfect for quick and versatile South Indian dishes. Ideal for preparing sweet or savory poha, upma, or snacks, it absorbs flavors beautifully. Sourced from premium rice, this aval cooks quickly, making it a convenient choice for busy mornings or light meals. Its smooth, thin flakes ensure a fluffy texture when soaked, pairing well with spices, vegetables, or jaggery. Perfect for breakfast or festive recipes, Arisi Nice Aval is a pantry staple, delivering authentic taste and ease of preparation. Enjoy its light, wholesome quality in traditional dishes or creative culinary experiments."
+    },
+    {
+        id: 2,
+        name: "Ketti Arisi Aval",
+        image: Aval2,
+        title: "Ketti Arisi Aval",
+        description: "Ketti Arisi Aval, crafted from thick rice flakes, delivers a hearty texture and subtle flavor, ideal for robust South Indian dishes. Perfect for savory poha, upma, or snacks, its thicker flakes hold up well with bold spices and ingredients. Sourced from high-quality rice, this aval is easy to prepare, requiring minimal soaking for a satisfying bite. Great for breakfast or quick meals, it pairs wonderfully with onions, peanuts, or curries. A versatile pantry essential, Ketti Arisi Aval brings authentic taste to both traditional and modern recipes, offering a wholesome, filling option for busy days or festive occasions with its distinct texture and reliable quality."
+    },
+    {
+        id: 3,
+        name: "Red Rice Ketti Aval",
+        image: Aval3,
+        title: "Red Rice Ketti Aval",
+        description: "Red Rice Ketti Aval, made from nutritious red rice, offers a nutty flavor and chewy texture, packed with fiber for a wholesome meal. Ideal for health-conscious diets, it’s perfect for savory poha, upma, or salads. Sourced from premium red rice, these thick flakes retain their natural bran, enhancing nutrition. Easy to prepare with minimal soaking, it pairs well with vegetables, spices, or coconut. Its earthy taste and robust texture make it a great choice for traditional South Indian dishes or modern grain bowls. Red Rice Ketti Aval brings a healthy, flavorful twist to your pantry, delivering authentic taste and satisfying bite for breakfast or snacks."
+    },
+    {
+        id: 4,
+        name: "Red Rice Nice Aval",
+        image: Aval4,
+        title: "Red Rice Nice Aval",
+        description: "Red Rice Nice Aval, crafted from fine red rice flakes, combines a nutty flavor with a delicate, fluffy texture for healthy South Indian dishes. Perfect for light poha, upma, or sweet recipes, it absorbs flavors effortlessly. Sourced from nutrient-rich red rice, these thin flakes are quick to prepare, ideal for busy mornings or snacks. Packed with fiber and antioxidants, it pairs well with jaggery, coconut, or savory spices. A versatile pantry staple, Red Rice Nice Aval suits both traditional and modern recipes, offering a wholesome, flavorful option. Enjoy its authentic taste and health benefits in breakfast dishes or creative meals with ease and consistency."
+    },
+    {
+        id: 5,
+        name: "Pori",
+        image: Aval5,
+        title: "Pori",
+        description: "Pori, or puffed rice, is a light, crispy staple perfect for South Indian snacks and festive treats. Ideal for making pori urundai, bhel puri, or savory mixes, its airy texture adds crunch to any dish. Sourced from premium rice, this pori is ready to use, requiring no cooking, making it a convenient choice for quick snacks or desserts. Its mild flavor pairs well with jaggery, spices, or peanuts, offering versatility for sweet or savory recipes. A pantry essential, Pori brings traditional taste to celebrations or casual munching, delivering a satisfying crunch and authentic South Indian flair with every bite, perfect for all ages."
+    },
+    {
+        id: 6,
+        name: "Nel Pori",
+        image: Aval6,
+        title: "Nel Pori",
+        description: "Nel Pori, premium puffed rice from paddy, offers a light, crunchy texture ideal for South Indian festive sweets and snacks. Perfect for pori urundai or savory mixes, its airy grains enhance both traditional and modern recipes. Sourced from high-quality rice, this pori requires no preparation, making it a convenient choice for quick treats. Its subtle flavor pairs beautifully with jaggery, cardamom, or roasted nuts, adding a delightful crunch. A must-have for celebrations or casual snacking, Nel Pori brings authentic South Indian taste to your pantry. Enjoy its versatility and crisp texture in desserts or savory dishes, delivering wholesome, traditional flavor with every bite."
+    },
 ];
 
 function AvalList() {
@@ -74,7 +110,7 @@ function AvalList() {
                                     transition: 'transform 0.3s ease',
                                 }}
                             >
-                                <Link to={`/aval/${encodeURIComponent(item.name)}`}>
+                                <Link to={`/aval-pori/${encodeURIComponent(item.name)}`}>
                                     <div style={{ position: 'relative', overflow: 'hidden' }}>
                                         <img
                                             src={item.image}
@@ -126,7 +162,7 @@ function AvalList() {
                                 <div className="text-center" style={{ padding: '10px 10px 15px 10px' }}>
                                     <h6 className="mb-2" style={{ fontSize: '16px', fontWeight: 600 }}>
                                         <Link
-                                            to={`/aval/${encodeURIComponent(item.name)}`}
+                                            to={`/aval-pori/${encodeURIComponent(item.name)}`}
                                             style={{ textDecoration: 'none', color: '#222' }}
                                         >
                                             {item.name}
