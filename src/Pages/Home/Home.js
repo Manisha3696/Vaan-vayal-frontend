@@ -65,10 +65,10 @@ const Home = () => {
           <h2 className="text-center mb-4 fw-bold">Top Categories</h2>
           <Row className="g-4 justify-content-center">
             {[
-              { name: 'Pooja', image: category1, link: '/Contact' },
-              { name: 'Spices', image: category2, link: '/Contact' },
-              { name: 'Flours', image: category3, link: '/Contact' },
-              { name: 'Rice', image: category4, link: '/Contact' },
+              { name: 'Pooja', image: category1, link: '/pooja-products' },
+              { name: 'Spices', image: category2, link: '/Spices' },
+              { name: 'Flours', image: category3, link: '/Flour' },
+              { name: 'Rice', image: category4, link: '/Rice' },
             ].map((cat, i) => (
               <Col key={i} md={3} sm={6} xs={12}>
                 <Link to={cat.link} className="text-decoration-none text-dark">

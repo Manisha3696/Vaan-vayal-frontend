@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import "../../../Css/Style.css";
 import { Col, Container, Row } from "react-bootstrap";
 import banner from '../../../images/Pooja/Banner.jpg'
-import poojaBanner from '../../../images/Pooja/Pooja-Banner-Vaan-Vayal.png'
+import poojaBanner1 from '../../../images/Pooja/pooja-ki-banner.jpg'
+import poojaBanner2 from '../../../images/Pooja/brass-pooja-kit-banner.jpg'
+import poojaBanner3 from '../../../images/Pooja/Spiritual-Religious-banner.jpg'
+import poojaBanner4 from '../../../images/Pooja/medicinalAndHerbal-banner.jpg'
+import poojaBanner5 from '../../../images/Pooja/Agricultural-Natural-banner.jpg'
 import durgaPooja from '../../../images/Pooja/Durga_Pooja_Kit-Vaan-Vayal.JPEG'
 import ganapathiPooja from '../../../images/Pooja/Ganapathi-Homam-Kit-Vaan-Vayal.JPEG'
 import hariddharshanPooja from '../../../images/Pooja/Haridharshan-Homam-Kit-Vaan-Vayal.JPEG'
@@ -386,7 +390,7 @@ const Pooja = () => {
                 <div className="col-md-4">
                   <div className="cardLayoutWeb">
                     <div>
-                      <img src={poojaBanner} alt="Image-1" />
+                      <img src={poojaBanner1} alt="Image-1" />
                     </div>
                     <div className="d-flex align-items-center justify-content-start">
 
@@ -400,7 +404,7 @@ const Pooja = () => {
                 <div className="col-md-4">
                   <div className="cardLayoutWeb">
                     <div>
-                      <img src={poojaBanner} alt="Image-1" />
+                      <img src={poojaBanner2} alt="Image-1" />
                     </div>
                     <div className="d-flex align-items-center justify-content-start">
 
@@ -414,7 +418,7 @@ const Pooja = () => {
                 <div className="col-md-4">
                   <div className="cardLayoutWeb">
                     <div>
-                      <img src={poojaBanner} alt="Image-1" />
+                      <img src={poojaBanner3} alt="Image-1" />
                     </div>
                     <div className="d-flex align-items-center justify-content-start">
 
@@ -428,7 +432,7 @@ const Pooja = () => {
                 <div className="col-md-4">
                   <div className="cardLayoutWeb">
                     <div>
-                      <img src={poojaBanner} alt="Image-1" />
+                      <img src={poojaBanner4} alt="Image-1" />
                     </div>
                     <div className="d-flex align-items-center justify-content-start">
 
@@ -442,7 +446,7 @@ const Pooja = () => {
                 <div className="col-md-4">
                   <div className="cardLayoutWeb">
                     <div>
-                      <img src={poojaBanner} alt="Image-1" />
+                      <img src={poojaBanner5} alt="Image-1" />
                     </div>
                     <div className="d-flex align-items-center justify-content-start">
 
@@ -801,7 +805,7 @@ const Pooja = () => {
                       <h6 className="mb-2" style={{ fontSize: '16px', fontWeight: 600 }}>
                         <Link
                           to={`/pooja-products/${encodeURIComponent(item.name)}`}
-                          style={{ textDecoration: 'none', color: '#222' }}
+                          style={{ textDecoration: 'none', color: '#060404ff' }}
                         >
                           {item.name}
                         </Link>
@@ -832,7 +836,7 @@ const Pooja = () => {
                       overflow: 'hidden',
                       border: '1px solid #eee',
                       borderRadius: '6px',
-                      boxShadow: '0 4px 8px rgba(0,0,0,0.05)',
+                      boxShadow: '0 4px 8px rgba(227, 15, 15, 0.05)',
                       backgroundColor: '#f7e0a1ff',
                       transition: 'transform 0.3s ease',
                     }}
@@ -860,7 +864,7 @@ const Pooja = () => {
                             left: 0,
                             width: '100%',
                             height: '100%',
-                            backgroundColor: 'rgba(0,0,0,0.2)',
+                            backgroundColor: 'rgba(193, 34, 34, 0.2)',
                             opacity: 0,
                             transition: 'opacity 0.3s ease',
                           }}

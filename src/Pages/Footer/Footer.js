@@ -45,10 +45,10 @@ function Footer() {
 
                         <div className="col-md-2 col-lg-2 col-xl-2 mb-2">
                             <h6 className="text-uppercase fw-bold mb-2">Products</h6>
-                            <p><a href="/Product1" className="text-white text-decoration-none">Pooja Item</a></p>
-                            <p><a href="/Product2" className="text-white text-decoration-none">Spices</a></p>
-                            <p><a href="/Product3" className="text-white text-decoration-none">Rice </a></p>
-                            <p><a href="/Product4" className="text-white text-decoration-none">Flour</a></p>
+                            <p><a href="/pooja-products" className="text-white text-decoration-none">Pooja Item</a></p>
+                            <p><a href="/Spices" className="text-white text-decoration-none">Spices</a></p>
+                            <p><a href="/Rice" className="text-white text-decoration-none">Rice </a></p>
+                            <p><a href="/Flour" className="text-white text-decoration-none">Flour</a></p>
                         </div>
 
                         <div className="col-md-5 mb-2">

@@ -1309,7 +1309,7 @@ a.video-play-btn {
 }
 
 .cardLayoutWeb {
-    background: linear-gradient(346deg, #939393, #fff 100%, #d8c0a8 0);
+    background: linear-gradient(346deg, #f7e0a1ff, #fff 100%, #d8c0a8 0);
     border-radius: .75rem;
     box-shadow: 0 1px 3px 0 #00000005, 0 0 0 1px #1b1f2326;
     display: flex;

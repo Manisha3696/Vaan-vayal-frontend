@@ -66,8 +66,10 @@ const AppalamSubPage = () => {
                             <p className="description">{Appalam.description}</p>
                             <div className="categories">Categories: Best Deals, Organic Appalam Exporters</div>
                         </div>
+                        
                     </div>
                 </main>
+                
             </div>
         </>
     );
