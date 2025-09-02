@@ -54,6 +54,20 @@ const specialPoojaKit = [
     name: "Sudharshana Pooja Kit",
     image: sudharshanaPooja,
     title: "Sudharshana Pooja Kit",
+    details: [
+      { name: '1.Haldi Powder', quantity: '13.Elachi', subName: '23.Navarathanam' },
+      { name: '2.Meenakshi Kumkum', quantity: '14.Jajikaya', subName: '24.Pancha loham' },
+      { name: '3.Sandal Powder', quantity: '15.Japathri', subName: '25.Dry Coconut' },
+      { name: '4.Betel Nuts', quantity: '16.Pacha Karpooram', subName: '26.Vattiveru' },
+      { name: '5.Agarbathi', quantity: '17.Lavangam', subName: '27.Navadhanyam' },
+      { name: '6.Match Box', quantity: '18.Dalchina Chekka', subName: '28.HomaDhravyam' },
+      { name: '7.Camphor', quantity: '19.Kasturi', subName: '29.Lotus Seeds' },
+      { name: '8.Cow Ghee', quantity: '20.Gorojanam', subName: '30.Dharba' },
+      { name: '9.Pancha Deepam oil', quantity: '21.Anasa Poovu', subName: '31.Pavitram' },
+      { name: '10.Akshathan', quantity: '22.Saffron (kunkuma povvu)', subName: '32.Kurcham' },
+      { name: '11.Rangoli powder', quantity: '', subName: '' },
+      { name: '12.Honey', quantity: '', subName: '' }
+    ],
     description: "Sudharshana Pooja Kit, designed for the sacred Sudarshana Homam, includes essentials for invoking Lord Vishnu’s divine protection. Perfect for spiritual rituals, it contains items like turmeric, kumkum, and incense, ensuring an authentic experience. Sourced from trusted suppliers, this kit simplifies preparation for devotees seeking prosperity and obstacle removal. Ideal for festivals or special prayers, it supports a complete pooja setup with high-quality materials. A must-have for devout households, this kit enhances spiritual focus and devotion. Perform the Sudarshana Pooja with ease, bringing divine blessings and positive energy to your home with every ritual, crafted for tradition and reverence."
   },
   {
@@ -61,13 +75,41 @@ const specialPoojaKit = [
     name: "Varalakshmi Pooja Kit",
     image: varalakshmiPooja,
     title: "Varalakshmi Pooja Kit",
-    description: "Varalakshmi Pooja Kit, curated for the auspicious Varalakshmi Vratam, includes essentials like kumkum, turmeric, and lamps for worshipping Goddess Lakshmi. Perfect for invoking wealth and prosperity, this kit ensures an authentic ritual experience. Sourced from premium materials, it simplifies preparation for devotees. Ideal for festivals or weekly prayers, it supports a complete pooja setup with high-quality items. A spiritual essential, this kit enhances devotion and focus during worship. Perform the Varalakshmi Pooja with ease, bringing divine blessings of abundance and harmony to your home. Crafted for tradition, it’s a must-have for households seeking the Goddess’s grace and favor."
+    description: "Varalakshmi Pooja Kit, curated for the auspicious Varalakshmi Vratam, includes essentials like kumkum, turmeric, and lamps for worshipping Goddess Lakshmi. Perfect for invoking wealth and prosperity, this kit ensures an authentic ritual experience. Sourced from premium materials, it simplifies preparation for devotees. Ideal for festivals or weekly prayers, it supports a complete pooja setup with high-quality items. A spiritual essential, this kit enhances devotion and focus during worship. Perform the Varalakshmi Pooja with ease, bringing divine blessings of abundance and harmony to your home. Crafted for tradition, it’s a must-have for households seeking the Goddess’s grace and favor.",
+    details: [
+      { name: '1.Pasupu', quantity: '12.Blouse Piece', subName: '' },
+      { name: '2.Meenakshi Kumkum', quantity: '13.Thread Reel', subName: '' },
+      { name: '3.Sandal Powder', quantity: '14.Cotton Wicks', subName: '' },
+      { name: '4.Pasupu Kommulu', quantity: '15.Kankanam', subName: '' },
+      { name: '5.Betel Nuts', quantity: '16.Pooja Asanam', subName: '' },
+      { name: '6.Agarbathi', quantity: '', subName: '' },
+      { name: '7.Camphor', quantity: '', subName: '' },
+      { name: '8.Pancha Deepam oil', quantity: '', subName: '' },
+      { name: '9.Akshathan', quantity: '', subName: '' },
+      { name: '10.Dry coconut Piece', quantity: '', subName: '' },
+      { name: '11.Dry Karjuram', quantity: '', subName: '' },
+
+    ]
   },
   {
     id: 3,
     name: "Shiva Pooja Kit",
     image: shivaPooja,
     title: "Shiva Pooja Kit",
+    details: [
+      { name: '1.Haldi Powder', quantity: '13.Elachi', subName: '23.Navarathanam', subNameone: '32.Dry Karjuram', subNametwo: '33.Pattu Vasthram' },
+      { name: '2.Meenakshi Kumkum', quantity: '14.Jajikaya', subName: '24.Pancha loham', subNameone: '', subNametwo: '34.Thread Reel' },
+      { name: '3.Sandal Powder', quantity: '15.Japathri', subName: '25.Dry Coconut', subNameone: '', subNametwo: '35.Cotton Wicks' },
+      { name: '4.Betel Nuts', quantity: '16.Pacha Karpooram', subName: '26.Vattiveru', subNametwo: '36.Kankanam' },
+      { name: '5.Agarbathi', quantity: '17.Lavangam', subName: '27.Navadhanyam', subNametwo: '37.Pooja Asanam' },
+      { name: '6.Match Box', quantity: '18.Dalchina Chekka', subName: '28.HomaDhravyam' },
+      { name: '7.Camphor', quantity: '19.Kasturi', subName: '29.Black Tills' },
+      { name: '8.Cow Ghee', quantity: '20.Gorojanam', subName: '30.Dharba Pavithram Kurcham' },
+      { name: '9.Pancha Deepam oil', quantity: '21.Anasa Poovu', subName: '31.Hand Napkinse Tissue Pape' },
+      { name: '10.Akshathan', quantity: '22.Saffron (kunkuma povvu)', subName: '' },
+      { name: '11.Rangoli powder', quantity: '', subName: '' },
+      { name: '12.Honey', quantity: '', subName: '' }
+    ],
     description: "Shiva Pooja Kit, designed for worshipping Lord Shiva, includes essentials like vibhuti, bilva leaves, and incense for a sacred ritual. Perfect for Maha Shivaratri or daily prayers, it ensures an authentic devotional experience. Sourced from trusted suppliers, this kit simplifies preparation with high-quality materials. Ideal for seeking peace and spiritual cleansing, it supports a complete pooja setup. A must-have for devotees, this kit enhances focus and reverence during worship. Perform the Shiva Pooja with ease, invoking divine blessings and tranquility in your home. Crafted for tradition, it brings the sacred essence of Lord Shiva’s grace to every ritual, fostering devotion and spiritual connection."
   },
   {
@@ -75,6 +117,20 @@ const specialPoojaKit = [
     name: "Satyanarayana Pooja Kit",
     image: satyanarayanaPooja,
     title: "Satyanarayana Pooja Kit",
+    details: [
+      { name: '1.Haldi Powder', quantity: '13.Elachi', subName: '23.Navarathanam', subNameone: '33.Cashew Nuts Kaju', subNametwo: '40.Pattu Vasthram' },
+      { name: '2.Meenakshi Kumkum', quantity: '14.Jajikaya', subName: '24.Pancha loham', subNameone: '34.Dry Grapes(Kismiss)', subNametwo: '41.Thread Reel' },
+      { name: '3.Sandal Powder', quantity: '15.Japathri', subName: '25.Dry Coconut', subNameone: '35.Dry Karjuram', subNametwo: '42.Cotton Wicks' },
+      { name: '4.Betel Nuts', quantity: '16.Pacha Karpooram', subName: '26.Vattiveru', subNameone: '36.Jaggery', subNametwo: '43.Kankanam' },
+      { name: '5.Agarbathi', quantity: '17.Lavangam', subName: '27.Navadhanyam', subNameone: '37.Sugar Nuts', subNametwo: '44.Pooja Asanam' },
+      { name: '6.Match Box', quantity: '18.Dalchina Chekka', subName: '28.HomaDhravyam', subNameone: '38.Chuduva', subNametwo: '' },
+      { name: '7.Camphor', quantity: '19.Kasturi', subName: '29.Lotus Seeds', subNameone: '39.Vari Pelalu (Nel Pori)', subNametwo: '' },
+      { name: '8.Cow Ghee', quantity: '20.Gorojanam', subName: '30.Dharba' },
+      { name: '9.Pancha Deepam oil', quantity: '21.Anasa Poovu', subName: '31.Pavitram' },
+      { name: '10.Akshathan', quantity: '22.Saffron (kunkuma povvu)', subName: '32.Kurcham' },
+      { name: '11.Rangoli powder', quantity: '', subName: '' },
+      { name: '12.Honey', quantity: '', subName: '' }
+    ],
     description: "Satyanarayana Pooja Kit, crafted for the revered Satyanarayana Vratam, includes essentials like turmeric, kumkum, and betel leaves for worshipping Lord Vishnu. Perfect for seeking blessings of truth and prosperity, it ensures an authentic ritual experience. Sourced from premium materials, this kit simplifies preparation for devotees. Ideal for festivals or monthly prayers, it supports a complete pooja setup with high-quality items. A spiritual essential, this kit enhances devotion and focus during worship. Perform the Satyanarayana Pooja with ease, bringing divine grace and harmony to your home. Crafted for tradition, it’s a must-have for households seeking spiritual fulfillment and blessings."
   },
   {
@@ -82,6 +138,20 @@ const specialPoojaKit = [
     name: "Haridarshan Pooja Kit",
     image: hariddharshanPooja,
     title: "Haridarshan Pooja Kit",
+    details: [
+      { name: '1.Haldi Powder', quantity: '13.Elachi', subName: '23.Navarathanam', subNameone: '33.Cashew Nuts Kaju', subNametwo: '40.Pattu Vasthram' },
+      { name: '2.Meenakshi Kumkum', quantity: '14.Jajikaya', subName: '24.Pancha loham', subNameone: '34.Dry Grapes(Kismiss)', subNametwo: '41.Thread Reel' },
+      { name: '3.Sandal Powder', quantity: '15.Japathri', subName: '25.Dry Coconut', subNameone: '35.Dry Karjuram', subNametwo: '42.Cotton Wicks' },
+      { name: '4.Betel Nuts', quantity: '16.Pacha Karpooram', subName: '26.Vattiveru', subNameone: '36.Jaggery', subNametwo: '43.Kankanam' },
+      { name: '5.Agarbathi', quantity: '17.Lavangam', subName: '27.Navadhanyam', subNameone: '37.Sugar Nuts', subNametwo: '44.Pooja Asanam' },
+      { name: '6.Match Box', quantity: '18.Dalchina Chekka', subName: '28.HomaDhravyam', subNameone: '38.Chuduva', subNametwo: '' },
+      { name: '7.Camphor', quantity: '19.Kasturi', subName: '29.Lotus Seeds', subNameone: '39.Vari Pelalu (Nel Pori)', subNametwo: '' },
+      { name: '8.Cow Ghee', quantity: '20.Gorojanam', subName: '30.Dharba' },
+      { name: '9.Pancha Deepam oil', quantity: '21.Anasa Poovu', subName: '31.Pavitram' },
+      { name: '10.Akshathan', quantity: '22.Saffron (kunkuma povvu)', subName: '32.Kurcham' },
+      { name: '11.Rangoli powder', quantity: '', subName: '' },
+      { name: '12.Honey', quantity: '', subName: '' }
+    ],
     description: "Haridarshan Pooja Kit, designed for worshipping Lord Vishnu, includes essentials like sandalwood, incense, and kumkum for a sacred ritual. Perfect for festivals or special prayers, it ensures an authentic devotional experience. Sourced from trusted suppliers, this kit simplifies preparation with high-quality materials. Ideal for seeking divine protection and prosperity, it supports a complete pooja setup. A must-have for devotees, this kit enhances spiritual focus and reverence during worship. Perform the Haridarshan Pooja with ease, invoking divine blessings and peace in your home. Crafted for tradition, it brings the sacred essence of Lord Vishnu’s grace to every ritual, fostering devotion and harmony."
   },
   {
@@ -89,6 +159,20 @@ const specialPoojaKit = [
     name: "Navgraha Pooja Kit",
     image: navgrahaPooja,
     title: "Navgraha Pooja Kit",
+    details: [
+      { name: '1.Haldi Powder', quantity: '13.Elachi', subName: '23.Navarathanam', subNameone: '33.Cashew Nuts Kaju', subNametwo: '40.Pattu Vasthram' },
+      { name: '2.Meenakshi Kumkum', quantity: '14.Jajikaya', subName: '24.Pancha loham', subNameone: '34.Dry Grapes(Kismiss)', subNametwo: '41.Thread Reel' },
+      { name: '3.Sandal Powder', quantity: '15.Japathri', subName: '25.Dry Coconut', subNameone: '35.Dry Karjuram', subNametwo: '42.Cotton Wicks' },
+      { name: '4.Betel Nuts', quantity: '16.Pacha Karpooram', subName: '26.Vattiveru', subNameone: '36.Jaggery', subNametwo: '43.Kankanam' },
+      { name: '5.Agarbathi', quantity: '17.Lavangam', subName: '27.Navadhanyam', subNameone: '37.Sugar Nuts', subNametwo: '44.Pooja Asanam' },
+      { name: '6.Match Box', quantity: '18.Dalchina Chekka', subName: '28.HomaDhravyam', subNameone: '38.Chuduva', subNametwo: '' },
+      { name: '7.Camphor', quantity: '19.Kasturi', subName: '29.Lotus Seeds', subNameone: '39.Vari Pelalu (Nel Pori)', subNametwo: '' },
+      { name: '8.Cow Ghee', quantity: '20.Gorojanam', subName: '30.Dharba' },
+      { name: '9.Pancha Deepam oil', quantity: '21.Anasa Poovu', subName: '31.Pavitram' },
+      { name: '10.Akshathan', quantity: '22.Saffron (kunkuma povvu)', subName: '32.Kurcham' },
+      { name: '11.Rangoli powder', quantity: '', subName: '' },
+      { name: '12.Honey', quantity: '', subName: '' }
+    ],
     description: "Navgraha Pooja Kit, curated for worshipping the nine planetary deities, includes essentials like navadhanya, incense, and kumkum for balancing cosmic energies. Perfect for astrological rituals, it ensures an authentic spiritual experience. Sourced from premium materials, this kit simplifies preparation for devotees. Ideal for special prayers or planetary remedies, it supports a complete pooja setup with high-quality items. A spiritual essential, this kit enhances focus and devotion during worship. Perform the Navgraha Pooja with ease, bringing harmony and positive energy to your life. Crafted for tradition, it’s a must-have for households seeking astrological balance and divine blessings."
   },
   {
@@ -96,6 +180,22 @@ const specialPoojaKit = [
     name: "Ganapathi Pooja Kit",
     image: ganapathiPooja,
     title: "Ganapathi Pooja Kit",
+    details: [
+      { name: '1.Haldi Powder', quantity: '15.Elachi', subName: '25.Navarathanam', subNameone: '35.Cashew Nuts Kaju', subNametwo: '38.Pattu Vasthram', subNamethree: '43.Ganga Jalam' },
+      { name: '2.Meenakshi Kumkum', quantity: '16.Jajikaya', subName: '26.Pancha loham', subNameone: '36.Dry Grapes(Kismiss)', subNametwo: '39.Thread Reel' },
+      { name: '3.Sandal Powder', quantity: '17.Japathri', subName: '27.Dry Coconut', subNameone: '37.Dry Karjuram', subNametwo: '40.Cotton Wicks' },
+      { name: '4.Betel Nuts', quantity: '18.Pacha Karpooram', subName: '28.Vattiveru', subNameone: '', subNametwo: '41.Kankanam' },
+      { name: '5.Agarbathi', quantity: '19.Lavangam', subName: '29.Navadhanyam', subNameone: '', subNametwo: '42.Pooja Asanam' },
+      { name: '6.Match Box', quantity: '20.Dalchina Chekka', subName: '30.HomaDhravyam', subNameone: '', subNametwo: '' },
+      { name: '7.Camphor', quantity: '21.Kasturi', subName: '31.Lotus Seeds', subNameone: '', subNametwo: '' },
+      { name: '8.Cow Ghee', quantity: '22.Gorojanam', subName: '32.Dharba', subNameone: '', subNametwo: '' },
+      { name: '9.Pancha Deepam oil', quantity: '23.Anasa Poovu', subName: '33.Pavitram', subNameone: '', subNametwo: '' },
+      { name: '10.Akshathan', quantity: '24.Saffron (kunkuma povvu)', subName: '34.Kurcham' },
+      { name: '11.Rangoli powder', quantity: '', subName: '' },
+      { name: '12.Honey', quantity: '', subName: '' },
+      { name: '13.Jaggery', quantity: '', subName: '' },
+      { name: '14.Sugar Nuts', quantity: '', subName: '' }
+    ],
     description: "Ganapathi Pooja Kit, crafted for worshipping Lord Ganesha, includes essentials like modak, durva grass, and incense for a sacred ritual. Perfect for Ganesh Chaturthi or daily prayers, it ensures an authentic devotional experience. Sourced from trusted suppliers, this kit simplifies preparation with high-quality materials. Ideal for seeking obstacle removal and success, it supports a complete pooja setup. A must-have for devotees, this kit enhances focus and reverence during worship. Perform the Ganapathi Pooja with ease, invoking divine blessings and prosperity in your home. Crafted for tradition, it brings Lord Ganesha’s grace to every ritual, fostering devotion and spiritual connection."
   },
   {
@@ -103,6 +203,20 @@ const specialPoojaKit = [
     name: "108 Om Thiraviya",
     image: omamKit,
     title: "108 Om Thiraviya",
+    details: [
+      { name: '1.Haldi Powder', quantity: '13.Elachi', subName: '23.Navarathanam', subNameone: '33.Cashew Nuts Kaju', subNametwo: '40.Pattu Vasthram' },
+      { name: '2.Meenakshi Kumkum', quantity: '14.Jajikaya', subName: '24.Pancha loham', subNameone: '34.Dry Grapes(Kismiss)', subNametwo: '41.Thread Reel' },
+      { name: '3.Sandal Powder', quantity: '15.Japathri', subName: '25.Dry Coconut', subNameone: '35.Dry Karjuram', subNametwo: '42.Cotton Wicks' },
+      { name: '4.Betel Nuts', quantity: '16.Pacha Karpooram', subName: '26.Vattiveru', subNameone: '36.Jaggery', subNametwo: '43.Kankanam' },
+      { name: '5.Agarbathi', quantity: '17.Lavangam', subName: '27.Navadhanyam', subNameone: '37.Sugar Nuts', subNametwo: '44.Pooja Asanam' },
+      { name: '6.Match Box', quantity: '18.Dalchina Chekka', subName: '28.HomaDhravyam', subNameone: '38.Chuduva', subNametwo: '' },
+      { name: '7.Camphor', quantity: '19.Kasturi', subName: '29.Lotus Seeds', subNameone: '39.Vari Pelalu (Nel Pori)', subNametwo: '' },
+      { name: '8.Cow Ghee', quantity: '20.Gorojanam', subName: '30.Dharba', subNameone: '', subNametwo: '' },
+      { name: '9.Pancha Deepam oil', quantity: '21.Anasa Poovu', subName: '31.Pavitram' },
+      { name: '10.Akshathan', quantity: '22.Saffron (kunkuma povvu)', subName: '32.Kurcham' },
+      { name: '11.Rangoli powder', quantity: '', subName: '' },
+      { name: '12.Honey', quantity: '', subName: '' }
+    ],
     description: "108 Om Thiraviya, a specialized pooja kit, includes premium ajwain (omam) and essentials for performing the sacred 108 Om Homam. Perfect for spiritual cleansing and health-focused rituals, it ensures an authentic experience. Sourced from trusted suppliers, this kit offers high-quality materials for devotees. Ideal for festivals or special prayers, it supports a complete pooja setup with items like incense and kumkum. A spiritual essential, this kit enhances devotion and focus during worship. Perform the 108 Om Thiraviya ritual with ease, bringing divine blessings and purification to your home. Crafted for tradition, it’s a must-have for households seeking spiritual and physical well-being."
   },
   {
@@ -110,6 +224,20 @@ const specialPoojaKit = [
     name: "Durga Pooja Kit",
     image: durgaPooja,
     title: "Durga Pooja Kit",
+    details: [
+      { name: '1.Haldi Powder', quantity: '13.Elachi', subName: '23.Navarathanam', subNameone: '33.Cashew Nuts Kaju', subNametwo: '38.Pattu Vasthram', subNamethree: '43.Ganga Jalam' },
+      { name: '2.Meenakshi Kumkum', quantity: '14.Jajikaya', subName: '24.Pancha loham', subNameone: '34.Dry Grapes(Kismiss)', subNametwo: '39.Thread Reel', subNamethree: '' },
+      { name: '3.Sandal Powder', quantity: '15.Japathri', subName: '25.Dry Coconut', subNameone: '35.Dry Karjuram', subNametwo: '40.Cotton Wicks', subNamethree: '' },
+      { name: '4.Betel Nuts', quantity: '16.Pacha Karpooram', subName: '26.Vattiveru', subNameone: '', subNametwo: '41.Kankanam', subNamethree: '' },
+      { name: '5.Agarbathi', quantity: '17.Lavangam', subName: '27.Navadhanyam', subNameone: '', subNametwo: '42.Pooja Asanam', subNamethree: '' },
+      { name: '6.Match Box', quantity: '18.Dalchina Chekka', subName: '28.HomaDhravyam', subNameone: '', subNametwo: '', subNamethree: '' },
+      { name: '7.Camphor', quantity: '19.Kasturi', subName: '29.Lotus Seeds', subNameone: '', subNametwo: '', subNamethree: '' },
+      { name: '8.Cow Ghee', quantity: '20.Gorojanam', subName: '30.Dharba' },
+      { name: '9.Pancha Deepam oil', quantity: '21.Anasa Poovu', subName: '31.Pavitram' },
+      { name: '10.Akshathan', quantity: '22.Saffron (kunkuma povvu)', subName: '32.Kurcham' },
+      { name: '11.Rangoli powder', quantity: '', subName: '' },
+      { name: '12.Honey', quantity: '', subName: '' }
+    ],
     description: "Durga Pooja Kit, designed for worshipping Goddess Durga, includes essentials like kumkum, turmeric, and incense for a sacred ritual. Perfect for Navratri or daily prayers, it ensures an authentic devotional experience. Sourced from premium materials, this kit simplifies preparation for devotees. Ideal for seeking strength and protection, it supports a complete pooja setup with high-quality items. A must-have for devout households, this kit enhances spiritual focus and reverence. Perform the Durga Pooja with ease, invoking divine blessings and courage in your home. Crafted for tradition, it brings the sacred essence of Goddess Durga’s grace to every ritual, fostering devotion and spiritual strength."
   },
 ];

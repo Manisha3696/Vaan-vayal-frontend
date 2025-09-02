@@ -451,6 +451,10 @@ p:last-child {
     border-radius: 8px;
 }
 
+.table>:not(caption)>*>* {
+    background-color: unset !important;
+}
+
 @keyframes spin {
     100% {
         transform: rotate(360deg);
