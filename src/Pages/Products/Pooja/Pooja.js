@@ -620,8 +620,8 @@ const Pooja = () => {
                           alt={item.name}
                           style={{
                             width: '100%',
-                            height: '200px',
-                            objectFit: 'cover',
+                            height: '225px !important',
+                            objectFit: 'fill',
                             transition: 'transform 0.3s ease',
                           }}
                           className="img-fluid"
@@ -709,7 +709,7 @@ const Pooja = () => {
                           alt={item.name}
                           style={{
                             width: '100%',
-                            height: '200px',
+                            height: '225px !important',
                             objectFit: 'cover',
                             transition: 'transform 0.3s ease',
                           }}
@@ -798,7 +798,7 @@ const Pooja = () => {
                           alt={item.name}
                           style={{
                             width: '100%',
-                            height: '200px',
+                            height: '225px !important',
                             objectFit: 'cover',
                             transition: 'transform 0.3s ease',
                           }}
@@ -887,7 +887,7 @@ const Pooja = () => {
                           alt={item.name}
                           style={{
                             width: '100%',
-                            height: '200px',
+                            height: '225px !important',
                             objectFit: 'cover',
                             transition: 'transform 0.3s ease',
                           }}
@@ -976,7 +976,7 @@ const Pooja = () => {
                           alt={item.name}
                           style={{
                             width: '100%',
-                            height: '200px',
+                            height: '225px !important',
                             objectFit: 'cover',
                             transition: 'transform 0.3s ease',
                           }}

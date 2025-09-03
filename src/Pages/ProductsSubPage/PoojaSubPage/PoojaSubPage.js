@@ -42,7 +42,7 @@ const PoojaSubPage = () => {
             return (
                 <div className="details-section">
                     <h4 style={{ color: '#2e7d32', marginBottom: '25px', textAlign: "start" }}>Pooja Kit</h4>
-                    <Table striped bordered style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px',textAlign:'start' }} responsive>
+                    <Table striped bordered style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', textAlign: 'start' }} responsive>
                         <thead>
                             <tr style={{ backgroundColor: '#f7e0a1ff', textAlign: 'left' }}>
                                 <th style={{ padding: '10px', border: '1px solid #ddd' }}>Pooja Samagri</th>

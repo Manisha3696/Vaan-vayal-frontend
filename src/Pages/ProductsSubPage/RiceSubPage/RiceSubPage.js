@@ -56,14 +56,14 @@ const RiceSubPage = () => {
                     <h3 style={{ color: "#2e7d32" }}>{rice.name}</h3>
                 </div>
                 <main className="main mb-5 mx-auto">
-                    <div className="product-details-container">
-                        <div className="product-image">
-                            <img src={rice.image} alt={rice.name} style={{ width: "80%" }} />
+                    <div className="product-details-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
+                        <div className="product-image" style={{ flex: '1 1 300px', maxWidth: '400px' }}>
+                            <img src={rice.image} alt={rice.name} style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }} />
                         </div>
-                        <div className="product-details">
-                            <h3 style={{ color: "#2e7d32" }}>{rice.title}</h3>
-                            <p className="description">{rice.description}</p>
-                            <div className="categories">Categories: Best Deals, Organic Rice Exporters</div>
+                        <div className="product-details" style={{ flex: '1 1 400px' }}>
+                            <h3 style={{ color: '#2e7d32', marginBottom: '15px' }}>{rice.title}</h3>
+                            <p className="description" style={{ fontSize: '14px', lineHeight: '1.6', marginBottom: '20px' }}>{rice.description}</p>
+                            <div className="categories" style={{ fontSize: '14px', color: '#777', marginBottom: '20px' }}>Categories: Best Deals, Organic Rice Exporters</div>
                         </div>
                     </div>
                 </main>
