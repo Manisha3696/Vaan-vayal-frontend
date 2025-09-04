@@ -1196,7 +1196,7 @@ a.video-play-btn {
     border: 1px solid rgba(0, 0, 0, 0.1) !important;
     color: #82ae46;
     padding: 10px 20px;
-    background: transparent !important;
+    /* background: transparent !important; */
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;

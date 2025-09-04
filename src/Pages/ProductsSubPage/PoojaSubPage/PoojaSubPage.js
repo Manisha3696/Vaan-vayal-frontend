@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import {
     specialPoojaKit,
     brassPoojaProducts,
@@ -11,6 +11,7 @@ import backButton from '../../../images/icons-back.png';
 import { Container, Row, Col, Table } from 'react-bootstrap';
 import banner from '../../../images/Pooja/Banner.jpg';
 import '../../../Css/Style.css';
+import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 
 const PoojaSubPage = () => {
     const { name } = useParams();
@@ -116,8 +117,8 @@ const PoojaSubPage = () => {
                     <h3 style={{ color: '#2e7d32' }}>{product.name}</h3>
                 </div>
                 <main className="main mb-5 mx-auto">
-                    <div className="product-details-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
-                        <div className="product-image" style={{ flex: '1 1 300px', maxWidth: '400px' }}>
+                    <div className="product-details-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', alignItems: 'stretch' }}>
+                        <div className="product-image" style={{ flex: '1 1', maxWidth: '400px', margin: '0 auto' }}>
                             <img
                                 src={product.image}
                                 alt={product.name}
@@ -133,6 +134,11 @@ const PoojaSubPage = () => {
                             <div className="categories" style={{ fontSize: '14px', color: '#777', marginBottom: '20px' }}>
                                 Categories: Best Deals, Organic Pooja Products Exporters
                             </div>
+                            <button className='btn btn-success w-28' style={{ borderRadius: 0, backgroundColor: "#198754 !important", color: "white" }}>
+                                <Link to='/contact' style={{ color: 'white' }}>
+                                    <ContactSupportIcon style={{ marginRight: "8px", marginTop: "-2px", alignItems: 'center' }} />Send Enquiry
+                                </Link>
+                            </button>
                         </div>
                     </div>
                 </main>
