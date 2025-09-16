@@ -36,6 +36,7 @@ const Home = () => {
       desc: 'Shop with Confidence – 24/7 Support Whenever You Need.',
     }
   ];
+
   return (
     <div>
       <section data-aos="fade-up" className="spices-banner">
@@ -61,37 +62,63 @@ const Home = () => {
         </Container>
       </section>
       <section data-aos="fade-up" className="py-5 bg-light">
-        <Container>
-          <h2 className="text-center mb-4 fw-bold">Top Categories</h2>
+        <Container className='mb-5'>
+          <h2 className="text-center fw-bold" id='marginBottom'>Top List</h2>
           <Row className="g-4 justify-content-center">
-            {[
-              { name: 'Pooja', image: category1, link: '/pooja-products' },
-              { name: 'Spices', image: category2, link: '/Spices' },
-              { name: 'Flours', image: category3, link: '/Flour' },
-              { name: 'Rice', image: category4, link: '/Rice' },
-            ].map((cat, i) => (
-              <Col key={i} md={3} sm={6} xs={12}>
-                <Link to={cat.link} className="text-decoration-none text-dark">
-                  <Card className="text-center h-100 shadow-sm border-0 category-card">
-                    <Card.Body className="d-flex flex-column justify-content-center align-items-center">
-                      <div data-aos="fade-up" className="category-icon mb-3">
-                        <img
-                          src={cat.image}
-                          alt={cat.name}
-                          className="img-fluid"
-                          style={{
-                            width: '230px',
-                            height: '180px',
-                            objectFit: 'contain',
-                          }}
-                        />
-                      </div>
-                      <Card.Title className="fw-bold">{cat.name}</Card.Title>
-                    </Card.Body>
-                  </Card>
-                </Link>
-              </Col>
-            ))}
+            <Col md={3} sm={6} xs={12} className='mb-5'>
+              <Link to='/pooja-products' className="text-decoration-none text-dark">
+                <Card className="h-100 shadow border-0 text-center p-3 rounded-5 category-card1" id='category-card1' style={{ background: "linear-gradient(180deg, #fceabb, #f8b500)", borderRadius: "20px", }} > {/* Image */} <div className="d-flex justify-content-center">
+                  <img src={category1} alt="Pooja" className="img-fluid rounded-circle category-image" />
+                </div>
+                  <Card.Body>
+                    <Card.Title className="fw-bold">Pooja</Card.Title>
+                    <Card.Text className="category-desc1 text-muted small">Essential items for traditional ceremonies and rituals.</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
+            <Col md={3} sm={6} xs={12} className='mb-5'>
+              <Link to='/rice' className="text-decoration-none text-dark">
+                <Card className="h-100 shadow border-0 text-center p-3 rounded-5 category-card2" id='category-card2' style={{ background: "linear-gradient(180deg, #fceabb, #f8b500)", borderRadius: "20px", }} >
+                  {/* Image */}
+                  <div className="d-flex justify-content-center">
+                    <img src={category2} alt="Rice" className="img-fluid rounded-circle category-image" />
+                  </div>
+                  <Card.Body>
+                    <Card.Title className="fw-bold">Rice</Card.Title>
+                    <Card.Text className="category-desc2 text-muted small">Premium quality rice varieties for everyday cooking.</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
+            <Col md={3} sm={6} xs={12} className='mb-5'>
+              <Link to='/flour' className="text-decoration-none text-dark">
+                <Card className="h-100 shadow border-0 text-center p-3 rounded-5 category-card3" id='category-card3' style={{ background: "linear-gradient(180deg, #fceabb, #f8b500)", borderRadius: "20px", }} >
+                  {/* Image */}
+                  <div className="d-flex justify-content-center">
+                    <img src={category3} alt="Flour" className="img-fluid rounded-circle category-image" />
+                  </div>
+                  <Card.Body>
+                    <Card.Title className="fw-bold">Flour</Card.Title>
+                    <Card.Text className="category-desc3 text-muted small">High-quality flours for baking and cooking needs.</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
+            <Col md={3} sm={6} xs={12} className='mb-5'>
+              <Link to='/spices' className="text-decoration-none text-dark">
+                <Card className="h-100 shadow border-0 text-center p-3 rounded-5 category-card4" id='category-card4' style={{ background: "linear-gradient(180deg, #fceabb, #f8b500)", borderRadius: "20px", }} >
+                  {/* Image */}
+                  <div className="d-flex justify-content-center">
+                    <img src={category4} alt="Spices" className="img-fluid rounded-circle category-image" />
+                  </div>
+                  <Card.Body>
+                    <Card.Title className="fw-bold">Spices</Card.Title>
+                    <Card.Text className="category-desc4 text-muted small">Authentic spices to enhance your culinary creations.</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
           </Row>
         </Container>
       </section>
@@ -108,17 +135,17 @@ const Home = () => {
             <Col
               data-aos="fade-up"
               md={5}
-              className="mt-n4 mt-md-0" style={{ margin: '75px 0px'}}
+              className="mt-n4 mt-md-0" style={{ margin: '75px 0px' }}
             >
               <h2
                 className="fw-bold mb-3 fs-3 text-center text-md-start py-4"
-              
+
               >
                 Why Choose Vaan Vayal?
               </h2>
               <p
                 className="text-center text-md-start mb-0"
-                style={{ marginTop: "-5px" }} 
+                style={{ marginTop: "-5px" }}
               >
                 Vaan Vayal Enterprises brings you nature’s best — fresh, pure, and full of goodness.
                 We carefully source our products directly from trusted farms and suppliers to ensure

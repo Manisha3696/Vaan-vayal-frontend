@@ -137,7 +137,7 @@ const Contact = () => {
               <CircularDottedLoader />
             </div>
           ) : (
-            <Grid item xs={12} md={6}>
+            <Grid item size={{ xs: 12, md: 6 }} >
               <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderRadius: 2, borderColor: '#e0e0e0' }}>
                 <CardContent>
                   <Typography data-aos="fade-up" variant="h6" gutterBottom>
@@ -167,7 +167,7 @@ const Contact = () => {
               </Card>
             </Grid>
           )}
-          <Grid item xs={12} md={6} sx={{ width: "50%" }}>
+          <Grid item size={{ xs: 12, md: 6 }}>
             <Card variant="outlined" sx={{ borderRadius: 2, height: '100%' }}>
               <CardContent>
                 <div data-aos="fade-up" className="mt-3">
